@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 /*
 font-family: 'Cormorant Unicase', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
+font-family: 'Lora', serif;
 */
 .header__nav {
     display: grid;
     grid-template-columns: 40% 2fr repeat(4, 10%);  
-    align-items: center;
+    
 }
  
 .header__links,
@@ -22,9 +24,9 @@ h3,
 .header__title-right
 {
     color: white;
+    
 }
 .header__links
-
 
 {
     text-decoration: none;
@@ -32,11 +34,32 @@ h3,
 
 }
 
+.text{
+    font-family: "Raleway", sans-serif;
+    font-size: 15pt
+}
+
+.btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+    border: none;
+    
+}
+.title {
+    font-family: 'Lora', serif;
+  font-size: 100pt;
+    
+}
+
+
 .header__calllinks{
     font-family: "Raleway", sans-serif;
 }
 .header__pfone{
     font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    word-spacing: normal;
+    
 }
 .menu{
     display: flex;
@@ -48,7 +71,7 @@ h3,
 }
 .header__spisok-nav{
     position: absolute;
-    top:20%;
+    top:10%;
     left: 15%;
     background: rgba(0, 0, 0, 0.54);
     
@@ -63,8 +86,11 @@ h3,
 }
 .header__title{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 10%;
+    grid-template-columns: 2fr 40%;
+    padding-left: 5%;
+    
+    
+    
 }
 .header__right-title{
     border-left: 1px solid white;
@@ -72,7 +98,9 @@ h3,
     opacity: 0.7;
     padding-left: 1em;
     font-family: "Raleway", sans-serif;
-    font-size: 11pt
+    font-size: 11pt;
+    padding-top: 5%;
+    
 }
 .header__title-right{
     text-align: center;
