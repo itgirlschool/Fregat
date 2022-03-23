@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
+/*
+font-family: 'Cormorant Unicase', serif;
+font-family: 'Raleway', sans-serif;
+*/
+.header {
+  background-color: #004281;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 164px 1fr;
+  max-height: 7rem;
+}
+.header__phone,
+.menu__link,
+.header__call-link {
+  color: #ffff;
+}
+.menu__link {
+  text-decoration: none;
+  background-color: transparent;
+  margin-right: 1rem;
+}
+a:-webkit-any(link) {
+  cursor: pointer;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
