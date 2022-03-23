@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
 /*
 font-family: 'Cormorant Unicase', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
 .header {
@@ -8,9 +10,9 @@ font-family: 'Raleway', sans-serif;
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr 164px 1fr;
-  grid-template-rows: 7em;
-  max-height: 7rem;
-  font-family: "Raleway", sans-serif;
+  grid-template-rows: 6em;
+  max-height: 6rem;
+  font-size: larger;
 }
 .header__phone,
 .menu__link,
@@ -19,7 +21,6 @@ font-family: 'Raleway', sans-serif;
 }
 .menu__link {
   text-decoration: none;
-  background-color: transparent;
 }
 a:-webkit-any(link) {
   cursor: pointer;
@@ -40,4 +41,20 @@ a:-webkit-any(link) {
 }
 .menu__item {
   margin-right: 2em;
+  font-family: "Raleway", sans-serif;
+}
+.header__contacts {
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+}
+.header__call-link {
+  font-family: "Montserrat", sans-serif;
+}
+.header__social-pic {
+  margin-right: 0.5rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
 }
