@@ -1,8 +1,57 @@
-.header__nav{
+
+.header__nav {
+    display: grid;
+    grid-template-columns: 40% 2fr repeat(4, 10%);  
+}
+ 
+.header__links,
+.header__pfone,
+.header__calllinks,
+.header__spisok-text,
+h1,
+h3,
+.header__title-text
+{
+    color: white;
+}
+.header__links
+{
+    text-decoration: none;
+}
+.header__pfone{
+    font-weight: bolder;
+}
+.menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+.header__logo{
+    padding-left: 4em;
+}
+.header__spisok-nav{
+    position: absolute;
+    top: 3%;
+    left: 15%;
     
 }
-.header {
-    background: url(assets\images\Видозером1srt.png);
+.header__botton-text {
+    background-color:#1566B3;
+    color: white;
+    border: none;
+    padding: 1em;
+ 
 }
+.header__title{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.header__right-title{
+    border-left: 1px solid white;
+    height: 20vh;
+    opacity: 0.8;
+
+}
+
+
+
+
