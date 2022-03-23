@@ -1,4 +1,10 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
+/*
+font-family: 'Cormorant Unicase', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
 .header__nav {
     display: grid;
     grid-template-columns: 40% 2fr repeat(4, 10%);  
@@ -18,8 +24,16 @@ h3,
     color: white;
 }
 .header__links
+
+
 {
     text-decoration: none;
+    font-family: "Raleway", sans-serif;
+
+}
+
+.header__calllinks{
+    font-family: "Raleway", sans-serif;
 }
 .header__pfone{
     font-weight: bolder;
@@ -57,9 +71,14 @@ h3,
     height: 20vh;
     opacity: 0.7;
     padding-left: 1em;
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt
 }
 .header__title-right{
     text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt
+
 }
 .header__footer{
     display: flex;
