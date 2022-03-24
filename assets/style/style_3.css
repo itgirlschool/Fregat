@@ -7,6 +7,7 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Lora', serif;
 */
+
 .header {
   background-color: #004281;
   display: grid;
@@ -15,6 +16,7 @@ font-family: 'Lora', serif;
   grid-template-rows: 6em;
   max-height: 6rem;
 }
+
 .header__phone,
 .menu__link,
 .header__call-link {
@@ -61,6 +63,9 @@ a:-webkit-any(link) {
   display: flex;
   justify-content: center;
 }
+.main {
+  background: #e5e5e5;
+}
 .breadcrumbs {
   display: flex;
   list-style: none;
@@ -69,7 +74,7 @@ a:-webkit-any(link) {
   margin-top: 8vw;
   margin-bottom: 3vw;
   position: relative;
-  right: 20px;
+  right: 4.2em;
 }
 .breadcrumbs__item1 ::after {
   content: ">";
@@ -146,7 +151,8 @@ a:-webkit-any(link) {
   min-width: fit-content;
   flex-wrap: wrap;
   background-color: #ffff;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
+  padding: 0.5em 2.5rem 0.5rem 0.5rem;
 }
 .room__marker {
   display: grid;
