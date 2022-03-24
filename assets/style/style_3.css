@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
-/*
-font-family: 'Cormorant Unicase', serif;
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;0,600;1,100&family=Rubik:wght@300;400;500&display=swap");
+/*font-family: 'Cormorant Unicase', serif;
+font-family: 'Rubik', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
+font-family: 'Lora', serif;
 */
 .header {
   background-color: #004281;
@@ -12,7 +14,6 @@ font-family: 'Raleway', sans-serif;
   grid-template-columns: 1fr 164px 1fr;
   grid-template-rows: 6em;
   max-height: 6rem;
-  font-size: larger;
 }
 .header__phone,
 .menu__link,
@@ -65,8 +66,10 @@ a:-webkit-any(link) {
   list-style: none;
   font-family: "Raleway", sans-serif;
   width: 80vw;
-  margin-top: 10vw;
-  margin-bottom: 5vw;
+  margin-top: 8vw;
+  margin-bottom: 3vw;
+  position: relative;
+  right: 20px;
 }
 .breadcrumbs__item1 ::after {
   content: ">";
@@ -97,37 +100,87 @@ a:-webkit-any(link) {
   grid-area: card;
 }
 
+.room__pic-top {
+  background-color: #ffc03b;
+  color: #ffff;
+  display: inline;
+  padding: 5px 10px;
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+}
+.room__pic {
+  width: 35vw;
+}
+.room__pic-main {
+  width: 35vw;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.container__pic {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.room__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+}
+.room__description {
+  font-family: "Raleway", sans-serif;
+  margin: 1rem 0;
+}
 .items {
   list-style: square url(/assets/images/checkmark.png) inside;
-  color: #222b45;
+  color: #545454;
 }
 .items__li {
   margin: 0.5rem;
+  font-size: large;
 }
 .room__list {
   display: flex;
   justify-content: center;
   min-width: fit-content;
+  flex-wrap: wrap;
   background-color: #ffff;
-  grid-area: list;
+  margin-bottom: 1rem;
 }
-.room__pic-main {
-  grid-area: pic;
-  width: 35vw;
+.room__marker {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
 }
-.room__pic-mini {
-  margin: 0.5rem;
+.room__marker-passive {
+  color: #545454;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.5rem;
 }
-
-.room__title {
-  grid-area: title;
+.room__marker-number,
+.room__marker-price {
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }
-.room__description {
-  grid-area: txt;
+.room__marker-price {
+  font-weight: 500;
+  font-size: larger;
 }
-.price {
-  grid-area: price;
+.room__marker-free--active {
+  color: #01c839;
 }
 .btn {
-  grid-area: btn;
+  background-color: inherit;
+  border-color: #4c65ad;
+  color: #4c65ad;
+  font-family: "Raleway", sans-serif;
+  padding: 0.5rem 3rem;
+}
+.btn:hover {
+  background-color: #4c65ad;
+  border-color: #ffff;
+  color: #ffff;
+  cursor: pointer;
 }
