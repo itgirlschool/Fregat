@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
+
+/*
+font-family: 'Cormorant Unicase', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+.header {
+    background-color: #004281;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 164px 1fr;
+    grid-template-rows: 6em;
+    max-height: 6rem;
+    font-size: larger;
+}
+
+.header__phone,
+.menu__link,
+.header__call-link {
+    color: #ffff;
+}
+
+.menu__link {
+    text-decoration: none;
+}
+
+a:-webkit-any(link) {
+    cursor: pointer;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.menu,
+.header__contacts,
+.menu__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.menu__item {
+    margin-right: 2em;
+    font-family: "Raleway", sans-serif;
+}
+
+.header__contacts {
+    margin-bottom: 1rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.header__call-link {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header__social-pic {
+    margin-right: 0.5rem;
+}
+
+/*==================================================================*/
+
+.wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+    margin-top: 8rem;
+}
+
+.breadcrumbs__item1 ::after {
+    content: ">";
+    margin: 0.5rem;
+}
+
+.breadcrumbs__item-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #505050;
+    text-decoration: none;
+}
+
+.breadcrumbs__item-link--active {
+    font-weight: 500;
+    color: #000;
+}
+
+.aside {
+    flex: 1 0 20%;
+    padding: 0px 60px 0px 0px;
+}
+
+.main {
+    flex: 1 0 80%;
+}
+
+.main__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 72px;
+    color: rgba(76, 101, 173, 1);
+}
+
+.container {
+    display: flex;
+}
+
+.item-about__icon img {
+    max-width: 100%;
+}
+
+.room-discribe__container {
+    display: flex;
+}
+
+.room-tour {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 63px;
+}
+
+.room-tour__available {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.room-tour__available span {
+    color: greenyellow;
+}
+
+.room-tour__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 18px 0px 17px 0px;
+}
+
+.room-tour__text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+}
