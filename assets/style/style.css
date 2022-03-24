@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
 /*
 font-family: 'Cormorant Unicase', serif;
 font-family: 'Montserrat', sans-serif;
@@ -7,12 +8,6 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Lora', serif;
 */
-.header__nav {
-    display: grid;
-    grid-template-columns: 40% 2fr repeat(4, 10%);  
-    
-}
- 
 .header__links,
 .header__pfone,
 .header__calllinks,
@@ -21,95 +16,174 @@ font-family: 'Lora', serif;
 h1,
 h3,
 .header__title-text,
-.header__title-right
-{
+.header__title-right {
     color: white;
-    
-}
-.header__links
-
-{
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-
 }
 
-.text{
+.header__links,
+.header__pfone,
+.header__calllinks,
+.header__spisok-text,
+.header__section-text,
+h1,
+h3,
+.header__title-text,
+.header__title-right {
+    color: white;
+}
+
+
+.header__nav {
+    display: grid;
+    grid-template-columns: 40% 2fr repeat(4, 10%);
+}
+
+.header__navbar {
+    margin-bottom: 5%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+
+}
+
+.header__logo {
+    padding-left: 4em;
+}
+
+.header__pfone {
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    word-spacing: normal;
+    padding-top: 18%;
+}
+
+.header__socseti {
+    padding-left: 15%;
+}
+
+.header__socseti,
+.header__call {
+    padding-top: 18%;
+}
+
+.header__calllinks {
     font-family: "Raleway", sans-serif;
-    font-size: 15pt
+}
+
+.header__spisok-nav {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    background: rgba(0, 0, 0, 0.54);
+}
+
+.header__title {
+    display: grid;
+    grid-template-columns: 2fr 40%;
+    padding-left: 5%;
+}
+
+
+.text {
+    font-family: "Raleway", sans-serif;
+    font-size: 15pt;
+    margin-top: -15%;
+    font-weight: 500;
+    margin-left: 3%;
+
+}
+
+.title {
+    font-family: 'Lora', serif;
+    font-size: 150pt;
+    margin-top: -2%;
+    font-weight: 400;
+
+}
+
+.header__title {
+    display: grid;
+    grid-template-columns: 2fr 40%;
+    padding-left: 5%;
+
 }
 
 .btn {
     font-family: "Raleway", sans-serif;
     font-size: 11pt;
     border: none;
-    
-}
-.title {
-    font-family: 'Lora', serif;
-  font-size: 100pt;
-    
 }
 
-
-.header__calllinks{
-    font-family: "Raleway", sans-serif;
-}
-.header__pfone{
-    font-weight: bolder;
-    font-family: 'Oswald', sans-serif;
-    word-spacing: normal;
-    
-}
-.menu{
-    display: flex;
-    justify-content: space-evenly;
-   
-}
-.header__logo{
-    padding-left: 4em;
-}
-.header__spisok-nav{
-    position: absolute;
-    top:10%;
-    left: 15%;
-    background: rgba(0, 0, 0, 0.54);
-    
-}
-    
 .header__botton-text {
-    background-color:#1566B3;
+    background-color: #1566B3;
     color: white;
     border: none;
     padding: 1em;
- 
+    margin-top: 3em;
+    margin-left: 3%;
+
 }
-.header__title{
-    display: grid;
-    grid-template-columns: 2fr 40%;
-    padding-left: 5%;
-    
-    
-    
-}
-.header__right-title{
+
+.header__right-title {
     border-left: 1px solid white;
     height: 20vh;
     opacity: 0.7;
     padding-left: 1em;
     font-family: "Raleway", sans-serif;
     font-size: 11pt;
-    padding-top: 5%;
-    
-}
-.header__title-right{
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    font-size: 11pt
+    margin-top: 10%;
 
 }
-.header__footer{
+
+.header__title-right {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+    margin-left: 20%;
+
+}
+
+.header__links {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+
+}
+
+.header__footer {
     display: flex;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.54);
+    margin-top: 10%;
+    padding: 2%;
 }
+
+.header__section {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.main {}
+
+.main__cards-entertaiment {}
+
+.main__discount {}
+
+.main__gallery {}
+
+.main__intro {}
+
+.main__location {}
+
+.main__register-form {}
+
+.main__reviews {}
+
+.main__room-cards {}
+
+.footer {}
