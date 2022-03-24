@@ -14,24 +14,11 @@ font-family: 'Lora', serif;
 .header__spisok-text,
 .header__section-text,
 h1,
-h3,
+.text,
 .header__title-text,
 .header__title-right {
     color: white;
 }
-
-.header__links,
-.header__pfone,
-.header__calllinks,
-.header__spisok-text,
-.header__section-text,
-h1,
-h3,
-.header__title-text,
-.header__title-right {
-    color: white;
-}
-
 
 .header__nav {
     display: grid;
@@ -167,23 +154,41 @@ h3,
 }
 
 
-
 .main {}
 
-.main__cards-entertaiment {}
+.section-1 {
+    background-color: #E5E5E5;
+}
 
-.main__discount {}
+.main__ihfo {
+    display: flex;
 
-.main__gallery {}
+}
 
-.main__intro {}
+.main__info-text {
+    margin-left: 5%;
+}
 
-.main__location {}
+.main__intro {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 15%;
 
-.main__register-form {}
+}
 
-.main__reviews {}
+.main__section {}
 
-.main__room-cards {}
+.main__title-intro {}
 
-.footer {}
+.section {
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+}
+
+
+
+.text-h3,
+.text-p {}
