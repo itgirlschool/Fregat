@@ -9,7 +9,7 @@ font-family: 'Raleway', sans-serif;
 .header {
     background-color: #004281;
     display: grid;
-    width: 100vw;
+    max-width: 100%;
     grid-template-columns: 1fr 164px 1fr;
     grid-template-rows: 6em;
     max-height: 6rem;
@@ -69,7 +69,7 @@ a:-webkit-any(link) {
 /*==================================================================*/
 
 .wrapper {
-    max-width: 1350px;
+    max-width: 1520px;
     margin: 0 auto;
     min-height: 100%;
     overflow: hidden;
@@ -103,16 +103,19 @@ a:-webkit-any(link) {
 }
 
 .aside {
-    flex: 1 0 20%;
+    flex: 0 1 40%;
     padding: 0px 60px 0px 0px;
 }
 
-.main {
-    flex: 1 0 80%;
+.main__container {
+    flex: 0 1 60%;
 }
 
 .main__title {
     font-family: "Raleway", sans-serif;
+    font-size: 65px;
+    margin: 56px 0px 70px 0px;
+    padding: 0;
     font-weight: 400;
     line-height: 72px;
     color: rgba(76, 101, 173, 1);
@@ -122,11 +125,28 @@ a:-webkit-any(link) {
     display: flex;
 }
 
-.item-about__icon img {
+.type-room__top {
+    background-color: #ffc03b;
+    color: #ffff;
+    display: inline;
+    padding: 7.41px 24px 8.42px 24px;
+    z-index: 2;
+    position: absolute;
+    margin-left: 16%;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.type-room__pic {
+    position: relative;
+}
+
+.type-room__pic img {
     max-width: 100%;
 }
 
-.room-discribe__container {
+.type-room__content {
     display: flex;
 }
 
@@ -160,4 +180,105 @@ a:-webkit-any(link) {
     font-size: 16px;
     font-weight: 300;
     line-height: 18px;
+}
+
+.room-tour__subtext {
+    max-width: 450px;
+    border-left: 1px solid;
+    padding: 0px 0px 0px 15px;
+    margin: 25px 0px 49px 0px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 17.6px;
+    color: rgba(76, 101, 173, 1);
+
+}
+
+.room__list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffff;
+    margin-bottom: 1rem;
+}
+
+.items {
+    list-style: square url(/assets/images/checkmark.png) inside;
+    color: #545454;
+}
+
+.items__li {
+    padding-bottom: 12px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.2px;
+}
+
+.items__li:last-child {
+    padding-bottom: 0px;
+}
+
+.room-information__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-information__quantity {
+    color: #545454;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.room-information__quantity span {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #000;
+}
+
+.room-information__price {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.room-information__price span {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.room__marker-price {
+    font-weight: 500;
+}
+
+.button {
+    background-color: inherit;
+    border-color: #4c65ad;
+    color: #4c65ad;
+    font-family: "Raleway", sans-serif;
+    padding: 23px 106px 20px 106px;
+}
+
+.type-room__content2 {
+    display: flex;
+    margin: 48px 0px 30px 0px;
+}
+
+.aside__container {
+    margin-top: 63px;
+    height: 893px;
+    border: 1px solid;
+}
+
+.aside__card {
+    height: 591px;
+    background: linear-gradient(180deg, rgba(73, 187, 255, 0.12) 0%, rgba(124, 206, 255, 0.56) 100%), #EFF9FF;
+    margin-top: 25px;
 }
