@@ -224,4 +224,19 @@ a:-webkit-any(link) {
 .description__button-content {
   width: 80vw;
   margin-top: 1rem;
+  color: #515151;
+  font-family: "Raleway", sans-serif;
+}
+.main__title {
+  color: #4c65ad;
+  font-family: "Cormorant Unicase", serif;
+  font-size: xx-large;
+  margin: 5rem 10rem;
+}
+.continer__roomcards {
+  width: 80vw;
+  display: flex;
+}
+.roomcard {
+  display: grid;
 }
