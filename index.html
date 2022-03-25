@@ -156,7 +156,74 @@
             </div>
             <div class="main__room-cards"></div>
         </section>
-        <div class="main__register-form"></div>
+        
+        <div class="main__register-form">
+            <header class ="header_register">1. Размещение 2. Бронирование 3. Оплата</header>
+            <div class="register_wrapper"> 
+            <div class="register_box1">Забронировать номер</div>
+            <div class="register_box2">
+                <img class="register_foto foto" src="./assets/images/roomcard.png" alt="roomcard">
+            </div>
+            <div class="register_box3">
+                <label for="arrival_date">Дата заезда</label>
+                <div class="dropdown">
+                        <input type="date">
+                        <div class="register_box2_1">
+                        <label for="departure_date">Дата oтъезда</label>
+                        <div class="dropdown"> </div>
+                        <input type="date">  
+                    </div>
+                </div>
+                
+            </div> 
+            <div class="register_box4">
+                <form>
+                    <label for="fname"> Имя</label><br>
+                    <input type="text" id="name" value="Введите ваше имя"><br>
+                  </form>
+            </div>
+            <div class="register_box5">
+                <label for="type of housing">Вид жилья</label><br>
+                <select name="Type of housing">
+                    <option value="Option1">Гостиничный корпус</option> 
+                    <option value="Option2">Коттедж (отделный дом)</option>
+                  </select>
+            </div>
+            <div class="register_box6">
+                <form>
+                    <label for="fname"> Телефон</label><br>
+                    <input type="text" id="name" value="Введите ваш номер телефона"><br>
+                  </form>
+            </div>
+            <div class="register_box7">
+            <label for="Room type">Вид  номера</label><br>
+            <select name="Вид номера">
+                    <option value="Option1"> Номер 1-Категории “Стандарт”</option> 
+                    <option value="Option2"> Номер 1-Категории “Стандарт”</option>
+                    <option value="Option3"> Номер 1-Категории “Стандарт”</option>
+                  </select>
+            </div>
+            <div class="register_box8">
+                <form>
+                    <label for="fname"> Комментарий</label><br>
+                    <input type="text" id="name" value="Введите ваш комментарий"><br>
+                  </form>
+            </div>
+            <div class="register_box9">
+                <form>
+                    <label for="fname"> Колличество человек</label><br>
+                    <input type="text" id="name" value="Введите колличество отдыхающих"><br>
+                  </form>
+            </div>
+            <div class="register_box10">
+                <form action="/action_page.php">
+                    <input type="submit" value="Забронировать номер">
+                  </form>
+            </div>
+        </div>
+        </div>  
+        
+                
         <div class="main__cards-entertaiment"></div>
         <div class="main__gallery"></div>
         <div class="main__reviews"></div>
