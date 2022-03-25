@@ -1,0 +1,15 @@
+.main__ihfo {
+    display: flex;
+
+}
+
+.main__info-text {
+    margin-left: 5%;
+}
+
+.main__intro {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 15%;
+
+}
