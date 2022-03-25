@@ -7,11 +7,13 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Lora', serif;
 */
-
+* {
+  box-sizing: border-box;
+}
 .header {
   background-color: #004281;
   display: grid;
-  width: 100vw;
+  max-width: 100vw;
   grid-template-columns: 1fr 164px 1fr;
   grid-template-rows: 6em;
   max-height: 6rem;
@@ -74,7 +76,7 @@ a:-webkit-any(link) {
   margin-top: 8vw;
   margin-bottom: 3vw;
   position: relative;
-  right: 4.2em;
+  right: 1.2em;
 }
 .breadcrumbs__item1 ::after {
   content: ">";
@@ -189,4 +191,52 @@ a:-webkit-any(link) {
   border-color: #ffff;
   color: #ffff;
   cursor: pointer;
+}
+.main__description {
+  display: grid;
+  margin-top: 5rem;
+  width: 80vw;
+  justify-items: center;
+}
+.description__buttons {
+  max-width: 100vw;
+  min-width: 99vw;
+  border-top: 1px solid rgb(194, 193, 193);
+  border-bottom: 1px solid rgb(194, 193, 193);
+}
+.description__button {
+  background-color: inherit;
+  color: #545454;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+}
+.description__button-button1 {
+  margin-left: 10vw;
+}
+.description__button:focus,
+.description__button:hover {
+  background-color: #4c65ad;
+  color: #ffff;
+}
+
+.description__button-content {
+  width: 80vw;
+  margin-top: 1rem;
+  color: #515151;
+  font-family: "Raleway", sans-serif;
+}
+.main__title {
+  color: #4c65ad;
+  font-family: "Cormorant Unicase", serif;
+  font-size: xx-large;
+  margin: 5rem 10rem;
+}
+.continer__roomcards {
+  width: 80vw;
+  display: flex;
+}
+.roomcard {
+  display: grid;
 }
