@@ -428,4 +428,12 @@ hr {
 
 }
 
-.main__cards-cena:before {}
+.main__cards-cena::before {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    background: #4C65AD;
+    width: 6%;
+    margin: 2%;
+
+}
