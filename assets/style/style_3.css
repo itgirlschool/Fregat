@@ -19,9 +19,10 @@ font-family: 'Lora', serif;
   max-height: 6rem;
 }
 
-.header__phone,
+.phone,
 .menu__link,
-.header__call-link {
+.header__call-link,
+.footer__mode {
   color: #ffff;
 }
 .menu__link {
@@ -31,7 +32,7 @@ a:-webkit-any(link) {
   cursor: pointer;
 }
 
-.menu__list {
+.menu__list-header {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -41,24 +42,28 @@ a:-webkit-any(link) {
 }
 .menu,
 .header__contacts,
-.menu__item {
+.menu__item-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-self: center;
 }
-.menu__item {
+.menu__item-header {
   margin-right: 2em;
+}
+.menu__item,
+.footer__mode {
   font-family: "Raleway", sans-serif;
 }
-.header__contacts {
+.header__contacts,
+.phone {
   margin-bottom: 1rem;
   font-family: "Oswald", sans-serif;
 }
 .header__call-link {
   font-family: "Montserrat", sans-serif;
 }
-.header__social-pic {
+.social__pic {
   margin-right: 0.5rem;
 }
 .container__breadcrumbs {
@@ -182,7 +187,7 @@ a:-webkit-any(link) {
 .btn {
   background-color: inherit;
   border-color: #4c65ad;
-  border: solid 3px;
+  border: solid 1px;
   color: #4c65ad;
   font-family: "Raleway", sans-serif;
   padding: 0.5rem 3rem;
@@ -196,12 +201,12 @@ a:-webkit-any(link) {
 .main__description {
   display: grid;
   margin-top: 5rem;
-  width: 80vw;
   justify-items: center;
+  width: 98.5vw;
 }
 .description__buttons {
-  max-width: 100vw;
-  min-width: 99vw;
+  box-sizing: border-box;
+  width: 101%;
   border-top: 1px solid rgb(194, 193, 193);
   border-bottom: 1px solid rgb(194, 193, 193);
 }
@@ -232,7 +237,7 @@ a:-webkit-any(link) {
   color: #4c65ad;
   font-family: "Cormorant Unicase", serif;
   font-size: xx-large;
-  margin: 5rem 0;
+  margin: 5rem 0 2rem 0;
 }
 .container__roomcards {
   width: 80vw;
@@ -244,9 +249,10 @@ a:-webkit-any(link) {
   width: 25vw;
   background-color: #ffff;
   padding: 1rem;
+  margin-bottom: 5rem;
 }
 .roomcard__pic-mini img {
-  max-width: 410px;
+  max-width: 380px;
 }
 .container__mini-items {
   display: flex;
@@ -255,6 +261,7 @@ a:-webkit-any(link) {
 }
 .container__marker-minik {
   margin-top: 24px;
+  padding-left: 1em;
 }
 .room__items-mini {
   padding: 0;
@@ -267,4 +274,54 @@ a:-webkit-any(link) {
 }
 .room__marker-passive--mini {
   width: 47%;
+}
+.footer {
+  background-color: #004281;
+  display: grid;
+  max-width: 100vw;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 8rem;
+  max-height: 8rem;
+  grid-template-areas: "nav btn contacts";
+}
+.menu__list-footer {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.menu__item-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 0.5em;
+}
+.container__footer__btn {
+  grid-area: btn;
+  display: flex;
+  align-content: center;
+}
+.footer__btn {
+  background-color: inherit;
+  border-color: #ffff;
+  border: solid 1px;
+  color: #ffff;
+  font-family: "Raleway", sans-serif;
+  padding: 0.5rem 3rem;
+  margin: 2rem;
+}
+.footer__contacts {
+  grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__mode {
+  margin-bottom: 1rem;
+}
+.footer__phone {
+  font-size: x-large;
+}
+.footer__social {
+  margin-right: 2rem;
 }
