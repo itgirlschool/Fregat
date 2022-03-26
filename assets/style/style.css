@@ -436,3 +436,29 @@ hr {
     margin: 2%;
 
 }
+
+/* main__location section*/
+
+.main__location {}
+
+.main__location-box {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    width: 80vw;
+    padding-top: 3%;
+}
+
+.main__location-info {}
+
+.main__location-maps {}
+
+.main__location-nav {
+    padding-top: 20%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #4C65AD;
+}
+
+.main__location-link {
+    margin-left: 1%;
+}
