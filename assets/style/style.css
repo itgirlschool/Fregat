@@ -211,6 +211,7 @@ h1,
   font-size: 13pt;
   font-weight: 600;
 }
+/* page1_main_room_cards start*/
 .container-tit {
   margin-top: 10rem;
 }
@@ -347,6 +348,7 @@ h1,
 .room__marker-free--active {
   color: #01c839;
 }
+/*page1_main_room_cards final*/
 .main__register-form {
   width: 80vw;
   border: 1px solid purple;
@@ -557,7 +559,47 @@ hr {
   width: 6%;
   margin: 2%;
 }
-
+/*discount start*/
+.main__discount {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: start;
+  background-image: url(/assets/images/ajnmir1srt.png);
+}
+.main__title-discount {
+  text-align: center;
+}
+.container__discount {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+}
+.discount__percent {
+  padding-bottom: 5rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 90pt;
+  font-weight: 900;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 143, 255),
+    rgb(9, 184, 22) 15%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.discount__percent img {
+  position: relative;
+  top: 20px;
+}
+.main__reviews {
+  margin-top: 10rem;
+}
+/*discount final*/
 /* main__location section*/
 
 .main__location {
