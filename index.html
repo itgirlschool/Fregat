@@ -94,7 +94,7 @@
         </div>
 
     </header>
-  
+    <main class="main">
         <section class="main__section section">
             <h2 class="main__title-intro">Причин, почему для отдыха на<br>Байкале нужно выбрать “Фрегат”</h2>
             <div class="main__intro">
@@ -156,86 +156,198 @@
             </div>
             <div class="main__room-cards"></div>
         </section>
-       
+
         <div class="main__register-form">
-            <header class ="header_register">
+            <header class="header_register">
                 <ol id="horizontal-list">
                     <li><span>Размещение </span></li>
                     <hr>
                     <li><span>Бронирование</span></li>
                     <hr>
                     <li><span>Оплата</span></li>
-                  </ol>
-                </header>
-            <div class="register_wrapper"> 
-            <div class="register_box1">
-                <h3 class="main__register1-text">Забронировать номер</h3>
-            </div>
-            <div class="register_box2">
-                <img class="register_foto foto" src="./assets/images/roomcard.png" alt="roomcard">
-            </div>
-            <div class="register_box3">
-                <label for="arrival_date">Дата заезда</label>
-                <div class="dropdown">
+                </ol>
+            </header>
+            <div class="register_wrapper">
+                <div class="register_box1">
+                    <h3 class="main__register1-text">Забронировать номер</h3>
+                </div>
+                <div class="register_box2">
+                    <img class="register_foto foto" src="./assets/images/roomcard.png" alt="roomcard">
+                </div>
+                <div class="register_box3">
+                    <label for="arrival_date">Дата заезда</label>
+                    <div class="dropdown">
                         <input type="date">
                         <div class="register_box2_1">
-                        <label for="departure_date">Дата oтъезда</label>
-                        <div class="dropdown"> </div>
-                        <input type="date">  
+                            <label for="departure_date">Дата oтъезда</label>
+                            <div class="dropdown"> </div>
+                            <input type="date">
+                        </div>
                     </div>
-                </div>    
-            </div> 
-            <div class="register_box4">
-                <form class="form_box4">
-                    <label for="fname">Имя</label><br>
-                    <input type="text" id="name" value="Введите ваше имя"><br>
-                  </form>
-            </div>
-            <div class="register_box5">
-                <label for="type of housing">Вид жилья</label><br>
-                <select name="Type of housing">
-                    <option value="Option1">Гостиничный корпус</option> 
-                    <option value="Option2">Коттедж (отделный дом)</option>
-                  </select>
-            </div>
-            <div class="register_box6">
-                <form>
-                    <label for="fname"> Телефон</label><br>
-                    <input type="text" id="name" value="Введите ваш номер телефона"><br>
-                  </form>
-            </div>
-            <div class="register_box7">
-            <label for="Room type">Вид  номера</label><br>
-            <select name="Вид номера">
-                    <option value="Option1"> Номер 1-Категории “Стандарт”</option> 
-                    <option value="Option2"> Номер 1-Категории “Стандарт”</option>
-                    <option value="Option3"> Номер 1-Категории “Стандарт”</option>
-                  </select>
-            </div>
-            <div class="register_box8">
-                <form>
-                    <label for="fname"> Комментарий</label><br>
-                    <input type="text8" id="name" value="Введите ваш комментарий"><br>
-                  </form>
-            </div>
-            <div class="register_box9">
-                <form>
-                    <label for="fname"> Колличество человек</label><br>
-                    <input type="text" id="name" value="Введите колличество отдыхающих"><br>
-                  </form>
-            </div>
-            <div class="register_box10">
-                <form action="/action_page.php">
-                    <input type="submit" value="Забронировать номер">
-                  </form>
-                  
+                </div>
+                <div class="register_box4">
+                    <form class="form_box4">
+                        <label for="fname">Имя</label><br>
+                        <input type="text" id="name" value="Введите ваше имя"><br>
+                    </form>
+                </div>
+                <div class="register_box5">
+                    <label for="type of housing">Вид жилья</label><br>
+                    <select name="Type of housing">
+                        <option value="Option1">Гостиничный корпус</option>
+                        <option value="Option2">Коттедж (отделный дом)</option>
+                    </select>
+                </div>
+                <div class="register_box6">
+                    <form>
+                        <label for="fname"> Телефон</label><br>
+                        <input type="text" id="name" value="Введите ваш номер телефона"><br>
+                    </form>
+                </div>
+                <div class="register_box7">
+                    <label for="Room type">Вид номера</label><br>
+                    <select name="Вид номера">
+                        <option value="Option1"> Номер 1-Категории “Стандарт”</option>
+                        <option value="Option2"> Номер 1-Категории “Стандарт”</option>
+                        <option value="Option3"> Номер 1-Категории “Стандарт”</option>
+                    </select>
+                </div>
+                <div class="register_box8">
+                    <form>
+                        <label for="fname"> Комментарий</label><br>
+                        <input type="text8" id="name" value="Введите ваш комментарий"><br>
+                    </form>
+                </div>
+                <div class="register_box9">
+                    <form>
+                        <label for="fname"> Колличество человек</label><br>
+                        <input type="text" id="name" value="Введите колличество отдыхающих"><br>
+                    </form>
+                </div>
+                <div class="register_box10">
+                    <form action="/action_page.php">
+                        <input type="submit" value="Забронировать номер">
+                    </form>
+
+                </div>
             </div>
         </div>
-        </div>  
-    </div>
+        </div>
 
-                
-        <div class="main__cards-entertaiment"></div>
+        <section class="main__section section">
+            <div class="main__cards-entertaiment">
+                <h2 class="main__cards-txt">Услуги и развлечения</h2>
+                <div class="main__cards-conteiner">
+                    <div class="main__cards-blok">
+                        <img class="main__cards-foto foto" src="./assets/images/chan.png" alt="chan">
+                        <div class="main__cards-info">
+                            <h3 class="main__cards-texth">Сибирский чан</h3>
+                            <div class="main__cadr-title">
+                                <p class="main__cards-textp">Новинка в мире парения! Эта процедура<br>замешана на
+                                    чудодейственной силе огня и<br>чистейшей байкальской воды в сочетании<br>с
+                                    сибирскими
+                                    травами и эфирными ....</p>
+                                <p class="main__cards-cena">от 2000 рублей в час</p>
+                            </div>
+                            <button class="main__cards-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="main__cards-blok">
+                        <img class="main__cards-foto foto" src="./assets/images/mangal1srt.png" alt="priroda">
+                        <div class="main__cards-info">
+                            <h3 class="main__cards-texth">Мангал на природе</h3>
+                            <div class="main__cadr-title">
+                                <p class="main__cards-textp">Приготовьте шашлык и насладитесь<br>вкусной едой на
+                                    открытом
+                                    воздухе. На<br> территории нашей базы расположена<br>отличная беседка с большим
+                                    столом
+                                    ...</p>
+                                <p class="main__cards-cena">от 1000 рублей в час</p>
+                            </div>
+                            <button class="main__cards-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="main__cards-blok">
+                        <img class="main__cards-foto foto" src="./assets/images/velo1str.png" alt="velosiped">
+                        <div class="main__cards-info">
+                            <h3 class="main__cards-texth">Прокат велосипедов</h3>
+                            <div class="main__cadr-title">
+                                <p class="main__cards-textp">Для семейного отдыха и приятного<br>времяпрепровождения мы
+                                    предоставляем<br>прокат качественных прогулочных велосипедов ...</p>
+                                <p class="main__cards-cena">от 500 рублей в час</p>
+                            </div>
+                            <button class="main__cards-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="main__cards-blok">
+                        <img class="main__cards-foto foto" src="./assets/images/sauna.png" alt="sauna">
+                        <div class="main__cards-info">
+                            <h3 class="main__cards-texth">Сауна</h3>
+                            <div class="main__cadr-title">
+                                <p class="main__cards-textp">В любое время года и при любой погоде,<br>
+                                    что может быть лучше настоящей сауны?<br> Наша сауна — настоящая находка для<br>
+                                    ценителей и
+                                    любителей парной.</p>
+                                <p class="main__cards-cena">от 4000 рублей в час</p>
+                            </div>
+                            <button class="main__cards-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="main__cards-blok">
+                        <img class="main__cards-foto foto" src="./assets/images/pibalka1str.png" alt="ribalka">
+                        <div class="main__cards-info">
+                            <h3 class="main__cards-texth">Рыбалка</h3>
+                            <div class="main__cadr-title">
+                                <p class="main__cards-textp">Традиционное русское увеселительное<br>мероприятие, подарит
+                                    огромное<br> наслаждение и взрослым и детям!<br>Рыбалка в районе мыса Мухор ...</p>
+                                <p class="main__cards-cena">от 2000 рублей в час</p>
+                            </div>
+                            <button class="main__cards-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="main__cards-blok">
+                        <img class="main__cards-foto foto" src="./assets/images/conczal.png" alt="zal">
+                        <div class="main__cards-info">
+                            <h3 class="main__cards-texth">Конференц-зал</h3>
+                            <div class="main__cadr-title">
+                                <p class="main__cards-textp">Если вы хотите совместить отдых и<br> плодотворную работу с
+                                    коллегами,<br> произвести положительное впечатление<br> на партнеров ....</p>
+                                <p class="main__cards-cena">от 1000 рублей в час</p>
+                            </div>
+                            <button class="main__cards-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="main__cards-blok">
+                        <img class="main__cards-foto foto" src="./assets/images/rest1.png" alt="restoran">
+                        <div class="main__cards-info">
+                            <h3 class="main__cards-texth">Ресторан “Фрегат”</h3>
+                            <div class="main__cadr-title">
+                                <p class="main__cards-textp">У гостей есть возможность оценить<br> разнообразные блюда
+                                    национальной<br> русской кухни и выпить свежесваренного<br>
+                                    эспрессо или капучино.</p>
+                                <p class="main__cards-cena">от 5000 рублей в час</p>
+                            </div>
+                            <button class="main__cards-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="main__cards-blok">
+                        <img class="main__cards-foto foto" src="./assets/images/ng.png" alt="new year">
+                        <div class="main__cards-info">
+                            <h3 class="main__cards-texth">Новый год 2022</h3>
+                            <div class="main__cadr-title">
+                                <p class="main__cards-textp">Банкетное меню Новогодняя ночь 2022 г.<br> на одного
+                                    человека:
+                                    Закуски<br>Мясная тарелка 75/25 гр. (Ростбиф,<br> балык (не жирная свинина),
+                                    сервелат
+                                    ...</p>
+                                <p class="main__cards-cena">от 5000 рублей в час</p>
+                            </div>
+                            <button class="main__cards-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="main__gallery"></div>
         <div class="main__reviews"></div>
         <div class="main__discount"></div>
