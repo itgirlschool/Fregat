@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;0,600;1,100&family=Rubik:wght@300;400;500&display=swap");
 
-/*
-font-family: 'Cormorant Unicase', serif;
+/*font-family: 'Cormorant Unicase', serif;
+font-family: 'Rubik', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
+font-family: 'Lora', serif;
 */
 * {
   box-sizing: border-box;
@@ -55,10 +57,12 @@ a:-webkit-any(link) {
 .menu__item-header {
   margin-right: 2em;
 }
+
 .menu__item,
 .footer__mode {
   font-family: "Raleway", sans-serif;
 }
+
 .header__contacts,
 .phone {
   margin-bottom: 1rem;
@@ -73,11 +77,7 @@ a:-webkit-any(link) {
   margin-right: 0.5rem;
 }
 
-/*==================================================================*/
-
-.main__gallery {
-  width: 1200px;
-}
+/*============================wrapper======================================*/
 
 .wrapper {
   max-width: 1200px;
@@ -88,6 +88,12 @@ a:-webkit-any(link) {
   flex-direction: column;
 }
 
+.container {
+  display: flex;
+  margin: 0px 0px 75px 0px;
+}
+
+/*=====================================breadcrumbs========================*/
 .breadcrumbs {
   display: flex;
 }
@@ -121,198 +127,101 @@ a:-webkit-any(link) {
   color: #000;
 }
 
-.main__container {
-  float: right;
-  max-width: 850px;
-}
-
-.title {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 72px;
-  color: rgba(76, 101, 173, 1);
-}
-
-.main__title {
-  margin: 56px 0px 70px 0px;
-  padding: 0;
-}
-
-.type-room__top {
-  background-color: #ffc03b;
-  color: #ffff;
-  display: inline;
-  padding: 7.41px 24px 8.42px 24px;
-  z-index: 2;
-  position: absolute;
-  margin-left: 13%;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 15px;
-}
-
-.type-room__foto img {
-  width: 20vw;
-}
-
-.type-room__pic {
-  position: relative;
-}
-
-.type-room__content {
-  display: flex;
-}
-
-.room-tour {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 0px 0px 63px;
-}
-
-.room-tour__available {
-  font-family: "Raleway", sans-serif;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 17px;
-}
-
-.room-tour__available span {
-  color: greenyellow;
-}
-
-.room-tour__title {
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  padding: 18px 0px 17px 0px;
-}
-
-.room-tour__text {
-  font-family: "Raleway", sans-serif;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 18px;
-}
-
-.room-tour__subtext {
-  max-width: 450px;
-  border-left: 1px solid;
-  padding: 0px 0px 0px 15px;
-  margin: 20px 0px 30px 0px;
-  font-family: "Raleway", sans-serif;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 17.6px;
-  color: rgba(76, 101, 173, 1);
-}
-
-.room__list {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #ffff;
-  margin-bottom: 1rem;
-}
-
-.items {
-  list-style: square url(/assets/images/checkmark.png) inside;
-  color: #545454;
-}
-
-.items__li {
-  padding-bottom: 12px;
-  font-family: "Raleway", sans-serif;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 19.2px;
-}
-
-.items__li:last-child {
-  padding-bottom: 0px;
-}
-
-.room-information__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.room-information__quantity {
-  color: #545454;
-  font-family: "Raleway", sans-serif;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 19px;
-}
-
-.room-information__quantity span {
-  font-family: "Raleway", sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 19px;
-  color: #000;
-}
-
-.room-information__price {
-  font-family: "Raleway", sans-serif;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 19px;
-}
-
-.room-information__price span {
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 25px;
-}
-
-.room__marker-price {
-  font-weight: 500;
-}
-
-.button {
-  background-color: inherit;
-  border-color: #4c65ad;
-  color: #4c65ad;
-  font-family: "Raleway", sans-serif;
-  padding: 12px 76px 10px 76px;
-  font-size: 10px;
-  font-weight: 500;
-}
-
-.type-room__content2 {
-  display: flex;
-  margin: 48px 0px 30px 0px;
-}
-
-.type-room__content4 {
-  display: flex;
-  margin: 30px 0px 0px 0px;
-}
-
+/*============================================aside============================*/
 .aside {
-  float: left;
-  width: 350px;
+  flex: 0 1 32%;
   padding: 0px 60px 0px 0px;
-  max-height: 1190px;
   display: flex;
   flex-direction: column;
+  margin-top: 63px;
 }
 
 .aside__content {
-  margin-top: 63px;
-  height: 750px;
   border: 1px solid;
+  display: flex;
+  flex-direction: column;
 }
 
+/*===================================filter======================*/
+
+.aside__filter {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.question-catalog {
+  margin: 35px 0px 0px 0px;
+  border-bottom: 1px solid #4c64ad2f;
+}
+
+.question-catalog:last-child {
+  margin: 35px 0px 35px 0px;
+}
+
+.question-catalog__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.question-catalog__variants {
+  margin: 24px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-catalog__number {
+  display: flex;
+}
+
+.question-catalog__number input[type='radio'] {
+  display: none;
+}
+
+.question-catalog__number label {
+  color: #666;
+  font-weight: normal;
+}
+
+.question-catalog__number label:before {
+  content: " ";
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  margin: 0px 10px 3px 0;
+  border-radius: 10px;
+  border: 2px solid #4c64ad;
+  background-color: #4c64ad;
+}
+
+.question-catalog__number input[type=radio]:checked+label:before {
+  display: none;
+}
+
+.question-catalog__number label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 11px 173px 11px 23px;
+  white-space: nowrap;
+  user-select: none;
+  margin: 0px 0px 12px 0px;
+}
+
+.question-catalog__number label:last-child {
+  margin: 0px 0px 17px 0px;
+}
+
+.question-catalog__number input[type=radio]:checked+label {
+  border: 1px solid rgba(76, 101, 173, 1);
+  max-width: 239px;
+  padding: 11px 170px 11px 39px;
+}
+
+/*===================================card======================*/
 .aside__card {
-  height: 430px;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(73, 187, 255, 0.12) 0%,
-      rgba(124, 206, 255, 0.56) 100%
-    ),
+      rgba(124, 206, 255, 0.56) 100%),
     #eff9ff;
   margin-top: 25px;
 }
@@ -327,6 +236,14 @@ a:-webkit-any(link) {
   display: flex;
   align-items: center;
 }
+
+.card-title__gerbtext {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0px 0px 0px 7px;
+}
+
 
 .card-title {
   padding: 15px 0px 0px 0px;
@@ -353,14 +270,6 @@ a:-webkit-any(link) {
   background-image: linear-gradient(109.98deg, #1577e4 6.71%, #00d583 105.52%);
 }
 
-.main__gallery {
-  max-width: 1200px;
-  padding: 200px 0px 0px 0px;
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .cashback-20__text {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -376,6 +285,220 @@ a:-webkit-any(link) {
   width: 100%;
 }
 
+/*====================================main================================*/
+
+.main {
+  flex: 0 1 68%;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 72px;
+  color: rgba(76, 101, 173, 1);
+}
+
+.main__title {
+  margin: 56px 0px 70px 0px;
+  padding: 0;
+}
+
+.type-room__text {
+  position: absolute;
+  width: 20vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.type-room__top {
+  background-color: #ffc03b;
+  color: #ffff;
+  display: inline;
+  padding: 7.41px 24px 8.42px 24px;
+  z-index: 2;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+.type-room__foto img {
+  width: 20vw;
+}
+
+.type-room__pic {
+  position: relative;
+}
+
+.type-room__content {
+  display: flex;
+}
+
+.room-tour {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 43px;
+}
+
+.room-tour__available {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+.room-tour__available span {
+  color: #01C839;
+}
+
+.room-tour__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 18px 0px 17px 0px;
+}
+
+.room-tour__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.room-tour__subtext {
+  max-width: 360px;
+  border-left: 1px solid;
+  padding: 0px 0px 0px 15px;
+  margin: 20px 0px 40px 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17.6px;
+  color: rgba(76, 101, 173, 1);
+}
+
+.room-tour__list {
+  display: flex;
+  background-color: #ffff;
+}
+
+.room-items1__items,
+.room-items2__items {
+  margin: 0;
+  padding: 0;
+}
+
+.items {
+  list-style: square url(/assets/images/checkmark.png) inside;
+  color: #545454;
+}
+
+.room-items1__li,
+.room-items2__li {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 19.2px;
+}
+
+.room-items1__li {
+  padding: 0px 0px 12px 0px;
+}
+
+.room-items2__li {
+  padding: 0px 0px 12px 43px;
+}
+
+.items__li:last-child {
+  padding-bottom: 0px;
+}
+
+.room-information__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-information__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-information__quantity {
+  color: #545454;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 19px;
+  padding-bottom: 7px;
+}
+
+.room-information__quantity span {
+  font-family: "Rubik", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+}
+
+.room-information__price {
+  color: #545454;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.room-information__price span {
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+}
+
+.room-information__button {
+  border: 1px solid #4c65ad;
+  padding: 14px 76px 12px 76px;
+}
+
+.button {
+  display: inline-block;
+  white-space: nowrap;
+  background-color: inherit;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4c65ad;
+  text-decoration: none;
+}
+
+
+.type-room__content2 {
+  display: flex;
+  margin: 48px 0px 30px 0px;
+}
+
+.type-room__content4 {
+  display: flex;
+  margin: 30px 0px 0px 0px;
+}
+
+/*==============================Gallery============================================*/
+.main__gallery {
+  max-width: 100%;
+  padding: 75px 0px 0px 0px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.photos-area__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 72px;
+  color: rgba(76, 101, 173, 1);
+}
+
 .photos-area {
   text-align: center;
   display: flex;
@@ -387,27 +510,26 @@ a:-webkit-any(link) {
   margin-top: 80px;
 }
 
-.gallery-block_photo1 {
-  max-width: 712px;
+.gallery-block__photo1 {
+  max-width: 752px;
   margin-right: 30px;
 }
 
-.gallery-block_photo1 img {
+.gallery-block__photo1 img {
   height: 378px;
-  max-width: 100%;
 }
 
-.gallery-block_photo2 {
+.gallery-block__photo2 {
   max-width: 277px;
+  margin-right: 30px;
 }
 
-.gallery-block_photo2 img {
+.gallery-block__photo2 img {
   margin-bottom: 30px;
   max-height: 172px;
-  max-width: 100%;
 }
 
-.gallery-block_photo2 img:last-child {
+.gallery-block__photo2 img:last-child {
   margin: 0px;
 }
 
@@ -416,9 +538,8 @@ a:-webkit-any(link) {
   margin-left: 30px;
 }
 
-.gallery-block_photo3 img {
+.gallery-block__photo3 img {
   max-height: 378px;
-  max-width: 100%;
 }
 
 .gallery-block2 {
@@ -426,37 +547,43 @@ a:-webkit-any(link) {
   margin-top: 42px;
 }
 
-.gallery-block2_photo1 {
+.gallery-block2__photo1 {
   max-width: 277px;
   margin-right: 30px;
 }
 
-.gallery-block2_photo1 img {
+.gallery-block2__photo1 img {
   margin-bottom: 30px;
   max-height: 172px;
-  max-width: 100%;
 }
 
-.gallery-block2_photo1 img:last-child {
+.gallery-block2__photo1 img:last-child {
   margin: 0px;
 }
 
-.gallery-block2_photo2 {
+.gallery-block2__photo2 {
   width: 279px;
 }
 
-.gallery-block2_photo2 img {
+.gallery-block2__photo2 img {
   height: 378px;
-  max-width: 100%;
 }
 
-.gallery-block2_photo3 {
+.gallery-block2__photo3 {
   max-width: 712px;
   margin-left: 30px;
 }
 
-.gallery-block2_photo3 img {
+.gallery-block2__photo3 img {
   height: 378px;
+}
+
+.gallery-block__photo1 img,
+.gallery-block__photo2 img,
+.gallery-block__photo3 img,
+.gallery-block2__photo1 img,
+.gallery-block2__photo2 img,
+.gallery-block2__photo3 img {
   max-width: 100%;
 }
 
@@ -466,6 +593,12 @@ a:-webkit-any(link) {
   padding: 74px 0px 0px 0px;
 }
 
+.gallery-button__watch {
+  border: 1px solid;
+  padding: 24px 75px 19px 75px;
+}
+
+/*==============================Footer============================================*/
 .footer {
   background-color: #004281;
   display: grid;
@@ -476,23 +609,27 @@ a:-webkit-any(link) {
   grid-template-areas: "nav btn contacts";
   margin-top: 5rem;
 }
+
 .menu__list-footer {
   grid-area: nav;
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
+
 .menu__item-footer {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   margin: 0.5em;
 }
-.container__footer__btn {
+
+.container__footer-btn {
   grid-area: btn;
   display: flex;
   align-content: center;
 }
+
 .footer__btn {
   background-color: inherit;
   border-color: #ffff;
@@ -502,18 +639,22 @@ a:-webkit-any(link) {
   padding: 0.5rem 3rem;
   margin: 2rem;
 }
+
 .footer__contacts {
   grid-area: contacts;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .footer__mode {
   margin-bottom: 1rem;
 }
+
 .footer__phone {
   font-size: x-large;
 }
+
 .footer__social {
   margin-right: 2rem;
 }
