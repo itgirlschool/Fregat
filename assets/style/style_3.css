@@ -249,7 +249,7 @@ a:-webkit-any(link) {
   width: 25vw;
   background-color: #ffff;
   padding: 1rem;
-  margin-bottom: 5rem;
+  margin: 5rem 1rem 0 0;
 }
 .roomcard__pic-mini img {
   max-width: 380px;
