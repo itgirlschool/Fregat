@@ -211,15 +211,18 @@ h1,
   font-size: 13pt;
   font-weight: 600;
 }
+
 /* page1_main_room_cards start*/
 .container-tit {
   margin-top: 10rem;
 }
+
 .container,
 .container-tit {
   display: flex;
   justify-content: center;
 }
+
 .main__description {
   display: grid;
   justify-items: center;
@@ -249,20 +252,24 @@ h1,
   position: absolute;
   text-align: center;
 }
+
 .room__pic {
   width: 35vw;
 }
+
 .main__title {
   color: #4c65ad;
   font-family: "Cormorant Unicase", serif;
   font-size: 6vh;
   margin: 5rem 0 2rem 0;
 }
+
 .container__roomcards {
   width: 80vw;
   display: flex;
   justify-content: space-between;
 }
+
 .roomcard-mini {
   display: grid;
   width: 25vw;
@@ -270,30 +277,37 @@ h1,
   padding: 1rem;
   margin: 3rem 1rem 0 0;
 }
+
 .roomcard__pic-mini img {
   max-width: 380px;
 }
+
 .container__mini-items {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
+
 .container__marker-minik {
   margin-top: 24px;
   padding-left: 1em;
 }
+
 .room__items-mini {
   padding: 0;
   width: 45%;
   border-right: 1px solid rgb(194, 193, 193);
 }
+
 .container__mini-btn {
   display: flex;
   justify-content: space-between;
 }
+
 .room__marker-passive--mini {
   width: 47%;
 }
+
 .btn-card {
   background-color: inherit;
   border-color: #4c65ad;
@@ -302,52 +316,63 @@ h1,
   font-family: "Raleway", sans-serif;
   padding: 0.5rem 3rem;
 }
+
 .btn-card:hover {
   background-color: #4c65ad;
   border-color: #ffff;
   color: #ffff;
   cursor: pointer;
 }
+
 .items {
   list-style: square url(/assets/images/checkmark.png) inside;
   color: #545454;
 }
+
 .items__li {
   margin: 0.5rem;
   font-size: large;
 }
+
 .room__description {
   font-family: "Raleway", sans-serif;
   margin: 1rem 0;
 }
+
 .room__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: x-large;
 }
+
 .room__marker {
   display: grid;
   gap: 5rem;
   grid-template-columns: 1fr 1fr;
 }
+
 .room__marker-passive {
   color: #545454;
   font-family: "Raleway", sans-serif;
   margin-bottom: 0.5rem;
 }
+
 .room__marker-number,
 .room__marker-price {
   color: #000;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
+
 .room__marker-price {
   font-weight: 500;
   font-size: larger;
 }
+
 .room__marker-free--active {
   color: #01c839;
 }
+
 /*page1_main_room_cards final*/
 .container__register {
   background-color: ivory;
@@ -560,51 +585,132 @@ hr {
   width: 6%;
   margin: 2%;
 }
-/*discount start*/
-.main__discount {
-  margin-bottom: 5rem;
-  display: flex;
+
+/*=====================================gallery==========================================================*/
+
+.main__gallery {
+  max-width: 1200px;
+  padding: 200px 0px 0px 0px;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: start;
-  background-image: url(/assets/images/ajnmir1srt.png);
+  margin: 0 auto;
 }
-.main__title-discount {
+
+.photos-area__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 72px;
+  color: rgba(76, 101, 173, 1);
+}
+
+.photos-area {
   text-align: center;
-}
-.container__discount {
   display: flex;
   justify-content: center;
-  font-weight: lighter;
 }
-.discount__percent {
-  padding-bottom: 5rem;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 90pt;
-  font-weight: 900;
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 143, 255),
-    rgb(9, 184, 22) 15%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+
+.gallery-block {
+  display: flex;
+  margin-top: 80px;
 }
-.discount__percent img {
-  position: relative;
-  top: 20px;
+
+.gallery-block__photo1 {
+  max-width: 586px;
+  margin-right: 30px;
 }
-.main__reviews {
-  margin-top: 10rem;
+
+.gallery-block__photo1 img {
+  height: 378px;
 }
-/*discount final*/
+
+.gallery-block__photo2 {
+  max-width: 277px;
+  margin-right: 30px;
+}
+
+.gallery-block__photo2 img {
+  margin-bottom: 30px;
+  max-height: 172px;
+}
+
+.gallery-block__photo2 img:last-child {
+  margin: 0px;
+}
+
+.gallery-block_photo3 {
+  width: 279px;
+  margin-left: 30px;
+}
+
+.gallery-block__photo3 img {
+  max-height: 378px;
+}
+
+.gallery-block2 {
+  display: flex;
+  margin-top: 42px;
+}
+
+.gallery-block2__photo1 {
+  max-width: 277px;
+  margin-right: 30px;
+}
+
+.gallery-block2__photo1 img {
+  margin-bottom: 30px;
+  max-height: 172px;
+}
+
+.gallery-block2__photo1 img:last-child {
+  margin: 0px;
+}
+
+.gallery-block2__photo2 {
+  width: 279px;
+}
+
+.gallery-block2__photo2 img {
+  height: 378px;
+}
+
+.gallery-block2__photo3 {
+  max-width: 586px;
+  margin-left: 30px;
+}
+
+.gallery-block2__photo3 img {
+  height: 378px;
+}
+
+.gallery-block__photo1 img,
+.gallery-block__photo2 img,
+.gallery-block__photo3 img,
+.gallery-block2__photo1 img,
+.gallery-block2__photo2 img,
+.gallery-block2__photo3 img {
+  max-width: 100%;
+}
+
+.gallery-button {
+  display: flex;
+  justify-content: center;
+  padding: 74px 0px 0px 0px;
+}
+
+.gallery-button__watch {
+  border: 1px solid #4c65ad;
+  padding: 14px 76px 12px 76px;
+  display: inline-block;
+  background-color: inherit;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4c65ad;
+}
+
 /* main__location section*/
 
-.main__location {
-}
+.main__location {}
 
 .main__location-box {
   display: grid;
@@ -613,11 +719,9 @@ hr {
   padding-top: 3%;
 }
 
-.main__location-info {
-}
+.main__location-info {}
 
-.main__location-maps {
-}
+.main__location-maps {}
 
 .main__location-nav {
   padding-top: 20%;
@@ -630,6 +734,79 @@ hr {
   margin-left: 1%;
 }
 
+/*discount start*/
+.main__discount {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: start;
+  background-image: url(/assets/images/ajnmir1srt.png);
+}
+
+.main__title-discount {
+  text-align: center;
+}
+
+.container__discount {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+}
+
+.discount__percent {
+  padding-bottom: 5rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 90pt;
+  font-weight: 900;
+  background-image: linear-gradient(to right,
+      rgba(21, 119, 228, 1) 15%,
+      rgba(0, 212, 131, 1) 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.discount__percent img {
+  position: relative;
+  top: 20px;
+}
+
+.main__reviews {
+  margin-top: 10rem;
+}
+
+/*discount final*/
+/* main__location section*/
+
+.main__location {}
+
+.main__location-box {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  width: 80vw;
+  padding-top: 3%;
+}
+
+.main__location-info {}
+
+.main__location-maps {}
+
+.main__location-nav {
+  padding-top: 20%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #4c65ad;
+}
+
+.main__location-link {
+  margin-left: 1%;
+}
+
+/*====================================footer=======================================================*/
+
 .footer {
   background-color: #004281;
   display: grid;
@@ -639,23 +816,27 @@ hr {
   max-height: 8rem;
   grid-template-areas: "nav btn contacts";
 }
+
 .menu__list-footer {
   grid-area: nav;
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
+
 .menu__item-footer {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   margin: 0.5em;
 }
+
 .container__footer__btn {
   grid-area: btn;
   display: flex;
   align-content: center;
 }
+
 .footer__btn {
   background-color: inherit;
   border-color: #ffff;
@@ -665,36 +846,45 @@ hr {
   padding: 0.5rem 3rem;
   margin: 2rem;
 }
+
 .footer__contacts {
   grid-area: contacts;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .footer__mode {
   margin-bottom: 1rem;
 }
+
 .footer__phone {
   font-size: x-large;
 }
+
 .footer__social {
   margin-right: 2rem;
 }
+
 .phone,
 .footer__mode,
 .menu__link {
   color: #ffff;
 }
+
 .menu__item,
 .footer__mode {
   font-family: "Raleway", sans-serif;
 }
+
 .menu__link {
   text-decoration: none;
 }
+
 a:-webkit-any(link) {
   cursor: pointer;
 }
+
 .phone {
   margin-bottom: 1rem;
   font-family: "Oswald", sans-serif;
