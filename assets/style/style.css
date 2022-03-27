@@ -349,12 +349,14 @@ h1,
   color: #01c839;
 }
 /*page1_main_room_cards final*/
+.container__register {
+  background-color: ivory;
+}
 .main__register-form {
   width: 80vw;
   border: 1px solid purple;
   margin-left: 200px;
   margin-top: 300px;
-  background-color: ivory;
 }
 
 .register_wrapper {
@@ -407,7 +409,6 @@ h1,
   grid-column: 2/3;
   grid-row: 4/6;
 }
-
 .register_box3 {
   display: grid;
   grid-column: 1/2;
