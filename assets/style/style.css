@@ -698,13 +698,11 @@ hr {
 .gallery-button {
   display: flex;
   justify-content: center;
-  padding: 74px 0px 0px 0px;
 }
 
 .gallery-button__watch {
   border: 1px solid #4c65ad;
   padding: 14px 76px 12px 76px;
-  display: inline-block;
   background-color: inherit;
   font-family: "Raleway", sans-serif;
   font-size: 13px;
@@ -934,4 +932,54 @@ a:-webkit-any(link) {
 .phone {
   margin-bottom: 1rem;
   font-family: "Oswald", sans-serif;
+}
+.container__reviews {
+  display: flex;
+  justify-content: center;
+}
+.main__reviews {
+  width: 80vw;
+  background-image: url(/assets/images/otziv-bck.png);
+}
+.container__reviews-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem 0;
+  font-family: "Raleway", sans-serif;
+}
+.reviews__card {
+  background-color: #ffff;
+  padding: 2rem;
+}
+.reviews-quotes {
+  position: relative;
+  bottom: 54px;
+}
+.reviews-inst {
+  position: relative;
+  left: 140px;
+  bottom: 34px;
+}
+.user {
+  background-color: #3a76e5;
+  border-radius: 50px;
+  padding: 25px;
+}
+.user2 {
+  border-radius: 50px;
+}
+.reviews__author {
+  display: flex;
+  align-items: center;
+}
+.reviews__txt {
+  margin-left: 2rem;
+}
+.reviews__name {
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+}
+.reviews__date,
+.review {
+  color: #515151;
 }
