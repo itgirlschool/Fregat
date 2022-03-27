@@ -260,7 +260,7 @@ a:-webkit-any(link) {
   justify-content: center;
 }
 .roomcard__pic-mini img {
-  max-width: 450px;
+  max-width: 96%;
 }
 
 .container__mini-items {
