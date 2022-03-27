@@ -244,16 +244,25 @@ a:-webkit-any(link) {
   display: flex;
   justify-content: space-between;
 }
+.container__roomcards-margin {
+  margin-bottom: 5rem;
+}
 .roomcard-mini {
   display: grid;
   width: 25vw;
   background-color: #ffff;
   padding: 1rem;
-  margin: 5rem 1rem 0 0;
+  margin: 3rem 1rem 0 0;
+}
+
+.roomcard__pic-mini {
+  display: flex;
+  justify-content: center;
 }
 .roomcard__pic-mini img {
-  max-width: 380px;
+  max-width: 450px;
 }
+
 .container__mini-items {
   display: flex;
   justify-content: space-between;
