@@ -733,7 +733,7 @@ hr {
 }
 
 .main__location-text {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 11pt;
   font-weight: 500;
   padding-left: 10%;
@@ -758,7 +758,6 @@ hr {
   margin-left: 3%;
   margin-right: 1%;
 }
-
 
 .main__location-box {
   display: grid;
@@ -812,9 +811,11 @@ hr {
   font-family: "Oswald", sans-serif;
   font-size: 90pt;
   font-weight: 900;
-  background-image: linear-gradient(to right,
-      rgba(21, 119, 228, 1) 15%,
-      rgba(0, 212, 131, 1) 50%);
+  background-image: linear-gradient(
+    to right,
+    rgba(21, 119, 228, 1) 15%,
+    rgba(0, 212, 131, 1) 50%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -832,6 +833,23 @@ hr {
 /*discount final*/
 /* main__location section*/
 
+.main__location-box {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  width: 80vw;
+  padding-top: 3%;
+}
+
+.main__location-nav {
+  padding-top: 20%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #4c65ad;
+}
+
+.main__location-link {
+  margin-left: 1%;
+}
 
 /*====================================footer=======================================================*/
 
