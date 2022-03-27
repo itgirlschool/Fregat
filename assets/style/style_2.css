@@ -12,6 +12,11 @@ font-family: 'Lora', serif;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #e5e5e5;
+  ;
+}
+
 .header {
   background-color: #004281;
   display: grid;
@@ -25,7 +30,7 @@ font-family: 'Lora', serif;
 .menu__link,
 .header__call-link,
 .footer__mode {
-  color: #ffff;
+  color: rgb(255, 255, 255);
 }
 
 .menu__link {
@@ -129,7 +134,7 @@ a:-webkit-any(link) {
 
 /*============================================aside============================*/
 .aside {
-  flex: 0 1 32%;
+  flex: 0 1 31%;
   padding: 0px 60px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -288,7 +293,7 @@ a:-webkit-any(link) {
 /*====================================main================================*/
 
 .main {
-  flex: 0 1 68%;
+  flex: 0 1 69%;
 }
 
 .title {
@@ -381,7 +386,6 @@ a:-webkit-any(link) {
 
 .room-tour__list {
   display: flex;
-  background-color: #ffff;
 }
 
 .room-items1__items,
@@ -408,7 +412,7 @@ a:-webkit-any(link) {
 }
 
 .room-items2__li {
-  padding: 0px 0px 12px 43px;
+  padding: 0px 0px 12px 39px;
 }
 
 .items__li:last-child {
@@ -436,7 +440,7 @@ a:-webkit-any(link) {
 
 .room-information__quantity span {
   font-family: "Rubik", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: #000;
 }
@@ -444,21 +448,21 @@ a:-webkit-any(link) {
 .room-information__price {
   color: #545454;
   font-family: "Raleway", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 19px;
 }
 
 .room-information__price span {
   font-family: "Rubik", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   color: #000;
 }
 
 .room-information__button {
   border: 1px solid #4c65ad;
-  padding: 14px 76px 12px 76px;
+  padding: 14px 46px 12px 46px;
 }
 
 .button {
@@ -472,6 +476,12 @@ a:-webkit-any(link) {
   text-decoration: none;
 }
 
+.button:hover {
+  background-color: #4c65ad;
+  border-color: #ffff;
+  color: #ffff;
+  cursor: pointer;
+}
 
 .type-room__content2 {
   display: flex;
