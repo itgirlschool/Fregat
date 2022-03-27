@@ -179,16 +179,18 @@ a:-webkit-any(link) {
   display: flex;
 }
 
-.question-catalog__number input[type='radio'] {
+.question-catalog__style[type='radio'] {
   display: none;
 }
 
-.question-catalog__number label {
-  color: #666;
-  font-weight: normal;
+.question-catalog__point {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(81, 81, 81, 1);
 }
 
-.question-catalog__number label:before {
+.question-catalog__point:before {
   content: " ";
   display: inline-block;
   width: 1px;
@@ -199,27 +201,27 @@ a:-webkit-any(link) {
   background-color: #4c64ad;
 }
 
-.question-catalog__number input[type=radio]:checked+label:before {
+.question-catalog__style[type=radio]:checked+label:before {
   display: none;
 }
 
-.question-catalog__number label {
+.question-catalog__point {
   display: inline-block;
   cursor: pointer;
-  padding: 11px 173px 11px 23px;
+  padding: 11px 143px 11px 23px;
   white-space: nowrap;
   user-select: none;
   margin: 0px 0px 12px 0px;
 }
 
-.question-catalog__number label:last-child {
+.question-catalog__point:last-child {
   margin: 0px 0px 17px 0px;
 }
 
-.question-catalog__number input[type=radio]:checked+label {
+.question-catalog__style[type=radio]:checked+label {
   border: 1px solid rgba(76, 101, 173, 1);
   max-width: 239px;
-  padding: 11px 170px 11px 39px;
+  padding: 11px 190px 11px 35px;
 }
 
 /*===================================card======================*/
