@@ -155,6 +155,7 @@ h1,
 
 .main__ihfo {
   display: flex;
+  max-width: 25vw;
 }
 
 .main__info-text {
@@ -254,10 +255,6 @@ h1,
   text-align: center;
 }
 
-.room__pic {
-  width: 35vw;
-}
-
 .main__title {
   color: #4c65ad;
   font-family: "Cormorant Unicase", serif;
@@ -278,9 +275,12 @@ h1,
   padding: 1rem;
   margin: 3rem 1rem 0 0;
 }
-
+.roomcard__pic-mini {
+  display: flex;
+  justify-content: center;
+}
 .roomcard__pic-mini img {
-  max-width: 380px;
+  max-width: 96%;
 }
 
 .container__mini-items {
