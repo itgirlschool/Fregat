@@ -943,12 +943,12 @@ a:-webkit-any(link) {
 }
 .container__reviews-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 5rem 0;
   font-family: "Raleway", sans-serif;
 }
 .reviews__card {
-  background-color: #ffff;
+  background-color: #fcfdff;
   padding: 2rem;
 }
 .reviews-quotes {
@@ -971,6 +971,7 @@ a:-webkit-any(link) {
 .reviews__author {
   display: flex;
   align-items: center;
+  padding-bottom: 5rem;
 }
 .reviews__txt {
   margin-left: 2rem;
