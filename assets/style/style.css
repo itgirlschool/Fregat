@@ -214,7 +214,7 @@ h1,
   font-weight: 600;
 }
 
-/* page1_main_room_cards start*/
+/*=================================== page1_main_room_cards===================================*/
 .container-tit {
   margin-top: 10rem;
 }
@@ -282,7 +282,7 @@ h1,
 }
 
 .roomcard__pic-mini img {
-  max-width: 96%;
+  max-width: 100%;
 }
 
 .container__mini-items {
@@ -736,16 +736,19 @@ h1,
   font-weight: 500;
   color: #4c65ad;
 }
-/*===========reviews===================================================*/
+/*=========================reviews===================================================*/
 .container__reviews {
   display: flex;
   justify-content: center;
 }
-
+.container__reviews-title {
+  text-align: center;
+  padding-bottom: 5rem;
+}
 .main__reviews {
   width: 80vw;
   background-image: url(/assets/images/otziv-bck.png);
-  padding-top: 174px;
+  padding-top: 100px;
   z-index: 2;
   position: relative;
 }
@@ -802,7 +805,7 @@ h1,
 .review {
   color: #515151;
 }
-/* main__location section*/
+/* =======================main__location section======================================*/
 .main__txt {
   font-family: "Raleway", sans-serif;
   font-size: 13pt;
@@ -870,7 +873,7 @@ h1,
   margin-left: 1%;
 }
 
-/*discount start*/
+/*===============================discount=============================================*/
 .main__discount {
   display: flex;
   flex-direction: column;
@@ -911,8 +914,7 @@ h1,
   top: 20px;
 }
 
-/*discount final*/
-/* main__location section*/
+/*================main__location section============================================*/
 
 .main__location-box {
   display: grid;
