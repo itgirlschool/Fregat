@@ -305,7 +305,7 @@ a:-webkit-any(link) {
   flex-direction: column;
   margin: 0.5em;
 }
-.container__footer__btn {
+.container__footer-btn {
   grid-area: btn;
   display: flex;
   align-content: center;
