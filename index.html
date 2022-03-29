@@ -13,13 +13,21 @@
 <body>
     <header class="header" style="background: url(./assets/images/Видозером1srt.png);">
         <nav class="header__nav">
-            <div class="header__navbar menu">
-                <a class="header__links" href="#">Номера и цены</a>
-                <a class="header__links" href="#">Услуги</a>
-                <a class="header__links" href="#">О базе отдыха</a>
-                <a class="header__links" href="#">Отзывы</a>
-                <a class="header__links" href="#">Контакты</a>
-            </div>
+            <ul class="header__navbar menu">
+                <li class="header__navbar-li"><a class="header__links" href="#">Номера и цены</a></li>
+                <li class="header__navbar-li"><a class="header__links" href="#">Услуги</a>
+                    <ul class="header__navbar-drop">
+                        <li class="header__drop"><a class="header__links" href="#">Сибирский чан</a></li>
+                        <li class="header__drop"><a class="header__links" href="#">Мангал на природе</a></li>
+                        <li class="header__drop"><a class="header__links" href="#">Прокат велосипедов</a></li>
+                        <li class="header__drop"><a class="header__links" href="#">Ресторан "Фрегат"</a></li>
+                    </ul>
+
+                </li>
+                <li class="header__navbar-li"><a class="header__links" href="#">О базе отдыха</a></li>
+                <li class="header__navbar-li"><a class="header__links" href="#">Отзывы</a></li>
+                <li class="header__navbar-li"><a class="header__links" href="#">Контакты</a></li>
+            </ul>
             <div class="header__logo">
                 <img src="./assets/images/logo1str.png" alt="logo">
             </div>
@@ -27,7 +35,8 @@
                 <img class="header__pfonepic" src="./assets/images/telefon1str.png" alt="telefon">8(3952)56-00-26
             </div>
             <div class="header__pfone">
-                <img class="header__pfonepic" src="./assets/images/telefon1str.png" alt="telefon">8(3952)56-00-26</div>
+                <img class="header__pfonepic" src="./assets/images/telefon1str.png" alt="telefon">8(3952)56-00-26
+            </div>
 
             <div class="header__socseti">
                 <img class="header__socseti-pic" src="./assets/images/viber1str.png" alt="viber">
@@ -37,13 +46,8 @@
             <div class="header__call">
                 <a class="header__calllinks" href="#">Заказать звонок</a>
             </div>
+
         </nav>
-        <div class="header__spisok-nav">
-            <p class="header__spisok-text">Сибирский чан</p>
-            <p class="header__spisok-text">Мангал на природе</p>
-            <p class="header__spisok-text">Прокат велосипедов</p>
-            <p class="header__spisok-text">Ресторан "Фрегат"</p>
-        </div>
 
         <div class="header__title">
             <div class="header__left-title">

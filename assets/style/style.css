@@ -11,7 +11,6 @@ font-family: 'Lora', serif;
 .header__links,
 .header__pfone,
 .header__calllinks,
-.header__spisok-text,
 .header__section-text,
 h1,
 .text,
@@ -25,8 +24,15 @@ h1,
   grid-template-columns: 40% 2fr repeat(4, 10%);
 }
 
-.header__navbar {
-  margin-bottom: 5%;
+
+
+.header__navbar-li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+
+
 }
 
 .menu {
@@ -59,11 +65,24 @@ h1,
   font-family: "Raleway", sans-serif;
 }
 
-.header__spisok-nav {
+.header__drop {
+  list-style: none;
+
+}
+
+.header__navbar-drop {
   position: absolute;
-  top: 10%;
-  left: 15%;
+  padding-top: 50px;
+  opacity: 0;
+
+}
+
+.header__drop:hover {
   background: rgba(0, 0, 0, 0.54);
+}
+
+.header__navbar-li:hover .header__navbar-drop {
+  opacity: 1;
 }
 
 .header__title {
@@ -75,7 +94,7 @@ h1,
 .text {
   font-family: "Raleway", sans-serif;
   font-size: 15pt;
-  margin-top: -15%;
+
   font-weight: 500;
   margin-left: 3%;
 }
@@ -83,15 +102,18 @@ h1,
 .title {
   font-family: "Lora", serif;
   font-size: 150pt;
-  margin-top: -2%;
+
   font-weight: 400;
 }
 
 .header__title {
   display: grid;
-  grid-template-columns: 2fr 40%;
+  grid-template-columns: 1fr 40%;
   padding-left: 5%;
+
 }
+
+
 
 .btn {
   font-family: "Raleway", sans-serif;
@@ -104,19 +126,32 @@ h1,
   background-color: #1566b3;
   color: white;
   border: none;
-  padding: 1em;
-  margin-top: 3em;
+  padding: 2%;
+  margin-top: 3%;
   margin-left: 3%;
 }
 
+
+
 .header__right-title {
   border-left: 1px solid white;
-  height: 20vh;
   opacity: 0.7;
-  padding-left: 1em;
+  padding-left: 1%;
   font-family: "Raleway", sans-serif;
   font-size: 11pt;
-  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+}
+
+
+
+
+.header__title-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .header__title-right {
@@ -124,6 +159,7 @@ h1,
   font-family: "Raleway", sans-serif;
   font-size: 11pt;
   margin-left: 20%;
+
 }
 
 .header__links {
@@ -736,15 +772,18 @@ h1,
   font-weight: 500;
   color: #4c65ad;
 }
+
 /*=========================reviews===================================================*/
 .container__reviews {
   display: flex;
   justify-content: center;
 }
+
 .container__reviews-title {
   text-align: center;
   padding-bottom: 5rem;
 }
+
 .main__reviews {
   width: 80vw;
   background-image: url(/assets/images/otziv-bck.png);
@@ -805,6 +844,7 @@ h1,
 .review {
   color: #515151;
 }
+
 /* =======================main__location section======================================*/
 .main__txt {
   font-family: "Raleway", sans-serif;
@@ -899,11 +939,9 @@ h1,
   font-family: "Oswald", sans-serif;
   font-size: 90pt;
   font-weight: 900;
-  background-image: linear-gradient(
-    to right,
-    rgba(21, 119, 228, 1) 15%,
-    rgba(0, 212, 131, 1) 50%
-  );
+  background-image: linear-gradient(to right,
+      rgba(21, 119, 228, 1) 15%,
+      rgba(0, 212, 131, 1) 50%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
