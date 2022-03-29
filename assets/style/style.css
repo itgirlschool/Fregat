@@ -94,9 +94,7 @@ h1,
 .text {
   font-family: "Raleway", sans-serif;
   font-size: 15pt;
-
   font-weight: 500;
-  margin-left: 3%;
 }
 
 .title {
@@ -128,7 +126,6 @@ h1,
   border: none;
   padding: 2%;
   margin-top: 3%;
-  margin-left: 3%;
 }
 
 
@@ -178,12 +175,19 @@ h1,
 .header__section-text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .header__section {
   display: flex;
+
   align-items: center;
+  align-content: stretch;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
 }
+
 
 .main {
   background-color: #e5e5e5;
@@ -197,6 +201,7 @@ h1,
 .main__info-text {
   padding-left: 2%;
   width: 20vw;
+
 }
 
 .main__intro {
@@ -630,6 +635,8 @@ h1,
   font-family: "Raleway", sans-serif;
   font-size: 18pt;
   font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .main__cards-textp {
