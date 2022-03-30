@@ -426,7 +426,7 @@ h1,
 .container-tit {
 
   margin-top: 0px;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .container,
@@ -846,7 +846,7 @@ h1,
   }
 
   .main__cards-textp {
-    font-size: 12pt;
+    font-size: 11pt;
   }
 
   .main__cards-txt {
@@ -855,7 +855,7 @@ h1,
 
 }
 
-@media (max-width: 680px) {
+@media (max-width: 713px) {
 
   .main__cards-textp,
   .main__cards-cena {
