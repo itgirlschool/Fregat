@@ -349,11 +349,10 @@ h1,
   color: #01c839;
 }
 /*page1_main_room_cards final*/
+/* page1_main__register-form start*/
 .main__register-form {
   width: 80vw;
-  border: 1px solid purple;
-  margin-left: 200px;
-  margin-top: 300px;
+  margin-top: 200px;
   background-color: ivory;
 }
 
@@ -365,7 +364,6 @@ h1,
   row-gap: 2%;
   width: 80vw;
   height: 749px;
-  border: 1px solid red;
   margin-bottom: 178px;
 }
 
@@ -374,7 +372,7 @@ h1,
   margin-bottom: 3rem;
   margin-top: 2rem;
   width: 80vw;
-  border: 1px solid green;
+  margin-right: 
 }
 
 .register_foto {
@@ -390,7 +388,6 @@ h1,
   font-weight: 400;
   text-align: justify;
   padding-top: 4px;
-  border: 1px solid black;
 }
 
 .main__register1-text {
@@ -402,63 +399,89 @@ h1,
   grid-column: 3/4;
   grid-row: 1/6;
 }
-
 .register_box8 {
   grid-column: 2/3;
   grid-row: 4/6;
 }
-
 .register_box3 {
   display: grid;
   grid-column: 1/2;
-}
-
-.register_box4 {
   border: 1px solid black;
 }
-
+#inner-grid{ 
+display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
 .form {
   width: 434px;
   height: 104px;
 }
-
 input[type="text"] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
   box-sizing: border-box;
   border: 1.34px solid #121212;
-  opacity: 0.4;
+  background-color: ivory;
   width: 434px;
   height: 64px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #121212;
 }
-
 input[type="text8"] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
   box-sizing: border-box;
   border: 1.34px solid #121212;
-  opacity: 0.4;
+  background-color: ivory;
   width: 434px;
   height: 198px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #121212;
 }
-
+input[type="text9"] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1.34px solid #121212;
+    background-color: ivory;
+    width: 466px;
+    height: 64px;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #121212;
+  }
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    height: 64px;
+    border: 1.34px solid #121212;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #121212;
+    background-color: ivory;
+    border-radius: 0px;
+    box-shadow: none;
+    -moz-appearance:none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    appearance: none;
+    outline-width: 0;
+}
 ol {
   list-style: none;
   counter-reset: li-counter;
 }
-
 ol li {
   counter-increment: li-counter;
   font-family: "Lora", serif;
@@ -466,7 +489,6 @@ ol li {
   font-weight: 600;
   color: #505050;
 }
-
 ol li::before {
   content: counter(li-counter);
   color: #505050;
@@ -481,11 +503,9 @@ ol li::before {
   padding: 4px;
   margin: 5px;
 }
-
 ol#horizontal-list li {
   display: inline;
 }
-
 hr {
   display: inline-block;
   width: 38px;
@@ -495,7 +515,18 @@ hr {
   padding-left: 4px;
   padding-right: 4px;
 }
-
+.main__register-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 10pt;
+    color: white;
+    border: 2px solid #1566b3;
+    background-color: #1566b3;
+    padding: 5%;
+    width:466px;
+    height:70px;
+  }
+/* page1_main__register-form end*/
 .main__cards-blok {
   display: flex;
   background-color: white;
