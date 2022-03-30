@@ -19,6 +19,7 @@ h1,
   color: white;
 }
 
+/*=================================== page1_header===================================*/
 .header__nav {
   display: grid;
   grid-template-columns: 40% 2fr repeat(4, 10%);
@@ -85,10 +86,11 @@ h1,
   opacity: 1;
 }
 
+
 .header__title {
   display: grid;
   grid-template-columns: 2fr 40%;
-  padding-left: 5%;
+
 }
 
 .text {
@@ -144,8 +146,6 @@ h1,
 }
 
 
-
-
 .header__title-text {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -164,6 +164,31 @@ h1,
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width:1280px) {
+
+  .header__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__title-text {
+    text-align: center;
+  }
+
+  .header__botton-text {
+    margin-left: 100px;
+  }
+
+  .title {
+    font-size: 80pt;
+  }
+
+  .header__right-title {
+    display: none;
+  }
+}
+
+/*=================================== page1_header-footer===================================*/
 .header__footer {
   display: flex;
   justify-content: space-around;
@@ -181,14 +206,66 @@ h1,
 
 .header__section {
   display: flex;
-
   align-items: center;
   align-content: stretch;
   flex-direction: row-reverse;
   justify-content: flex-start;
 }
 
+@media (min-width: 585px) and (max-width: 1204px) {
 
+  .section-text {
+    display: none;
+  }
+}
+
+@media (max-width: 585px) {
+  .section-text {
+    display: none;
+  }
+
+  .header__botton-text {
+    margin-left: 80px;
+  }
+
+  .footer-img {
+    display: none;
+  }
+
+  .title {
+    font-size: 60pt;
+  }
+}
+
+@media (max-width: 440px) {
+  .section-text {
+    display: none;
+  }
+
+  .footer-img,
+  .footer-img2 {
+    display: none;
+  }
+
+  .title {
+    font-size: 50pt;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .header__title-text {
+    text-align: center;
+  }
+
+  .header__botton-text {
+    margin-left: 20px;
+  }
+
+}
+
+/*=================================== page1_main-info===================================*/
 .main {
   background-color: #e5e5e5;
 }
@@ -208,6 +285,7 @@ h1,
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-gap: 15%;
+  padding-right: 100px;
 }
 
 .foto {
@@ -222,12 +300,12 @@ h1,
   margin: 0 auto;
   font-family: "Lora", serif;
   font-size: 40pt;
-  padding-top: 10%;
+  padding-top: 0px;
   padding-bottom: 10%;
   text-align: center;
   color: #4c65ad;
   font-weight: normal;
-  padding-left: 15%;
+
 }
 
 .main__title-intro::before {
@@ -255,9 +333,100 @@ h1,
   font-weight: 600;
 }
 
+@media (max-width:1200px) {
+  .main__title-intro {
+    font-size: 30pt;
+  }
+
+  .main__title-intro::before {
+    content: "6";
+    font-size: 70pt;
+    display: block;
+    position: relative;
+    top: 100px;
+    right: 380px;
+  }
+}
+
+@media (max-width:820px) {
+  .main__title-intro {
+    font-size: 20pt;
+  }
+
+  .main__title-intro::before {
+    content: "6";
+    font-size: 60pt;
+    display: block;
+    position: relative;
+    top: 80px;
+    right: 250px;
+  }
+}
+
+@media (max-width:550px) {
+  .main__title-intro {
+    font-size: 15pt;
+  }
+
+  .main__title-intro::before {
+    content: "6";
+    font-size: 40pt;
+    display: block;
+    position: relative;
+    top: 55px;
+    right: 190px;
+  }
+}
+
+@media (max-width:440px) {
+  .main__title-intro {
+    font-size: 10pt;
+  }
+
+  .main__title-intro::before {
+    content: "6";
+    font-size: 30pt;
+    display: block;
+    position: relative;
+    top: 40px;
+    right: 130px;
+  }
+}
+
+@media (max-width:900px) {
+  .main__intro {
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+    grid-gap: 5%;
+    padding-right: 0px;
+  }
+
+  .main__ihfo {
+    display: flex;
+    max-width: 25vw;
+    flex-direction: column;
+  }
+
+  .main__info-text {
+
+    width: 30vw;
+  }
+
+}
+
+@media (max-width:550px) {
+  .textp {
+    display: none;
+  }
+}
+
+
+
 /*=================================== page1_main_room_cards===================================*/
 .container-tit {
-  margin-top: 10rem;
+
+  margin-top: 0px;
+  padding-top: 200px;
 }
 
 .container,
@@ -591,7 +760,7 @@ h1,
   max-width: 100%;
 }
 
-/*================================cards-blok=============================*/
+/*================================main-cards-blok=============================*/
 .main__cards-blok {
   display: flex;
   background-color: white;
@@ -658,6 +827,66 @@ h1,
   width: 6%;
   margin: 2%;
 }
+
+@media (max-width: 1280px) {
+
+  .main__cards-textp,
+  .main__cards-cena {
+    font-size: 11pt;
+  }
+}
+
+@media (max-width:1145px) {
+  .main__cards-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main__cards-textp {
+    font-size: 12pt;
+  }
+
+  .main__cards-txt {
+    font-size: 35pt;
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .main__cards-textp,
+  .main__cards-cena {
+    display: none;
+  }
+
+  .main__cards-txt {
+    font-size: 25pt;
+  }
+
+  .main__cards-blok {
+    display: flex;
+    background-color: white;
+    padding: 3%;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+  }
+
+  .main__cards-blok {
+    height: 1%;
+
+  }
+
+  .main__cards-texth {
+    font-size: 18pt;
+  }
+}
+
 
 /*=====================================gallery==========================================================*/
 
