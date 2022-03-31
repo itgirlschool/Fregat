@@ -163,30 +163,6 @@ h1,
   font-family: "Raleway", sans-serif;
 }
 
-@media (max-width:1280px) {
-
-  .header__title {
-    display: flex;
-    justify-content: center;
-  }
-
-  .header__title-text {
-    text-align: center;
-  }
-
-  .header__botton-text {
-    margin-left: 100px;
-  }
-
-  .title {
-    font-size: 80pt;
-  }
-
-  .header__right-title {
-    display: none;
-  }
-}
-
 /*=================================== page1_header-footer===================================*/
 
 .header__footer {
@@ -264,6 +240,34 @@ h1,
   }
 
 }
+
+
+
+
+@media (max-width:1280px) {
+
+  .header__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__title-text {
+    text-align: center;
+  }
+
+  .header__botton-text {
+    margin-left: 100px;
+  }
+
+  .title {
+    font-size: 80pt;
+  }
+
+  .header__right-title {
+    display: none;
+  }
+}
+
 
 /*=================================== page1_main-info===================================*/
 
@@ -1154,7 +1158,48 @@ ol {
   color: #515151;
 }
 
-/* =======================main__location section======================================*/
+
+/*===============================discount=============================================*/
+.main__discount {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: start;
+  background-image: url(/assets/images/ajnmir1srt.png);
+}
+
+.main__title-discount {
+  text-align: center;
+}
+
+.container__discount {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+}
+
+.discount__percent {
+  padding-bottom: 5rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 90pt;
+  font-weight: 900;
+  background-image: linear-gradient(to right,
+      rgba(21, 119, 228, 1) 15%,
+      rgba(0, 212, 131, 1) 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.discount__percent img {
+  position: relative;
+  top: 20px;
+}
+
+/*================main__location section============================================*/
+
 .main__location-maps {
   margin-top: 4%;
 }
@@ -1236,62 +1281,17 @@ ol {
   color: #000000;
 }
 
-/*===============================discount=============================================*/
-.main__discount {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: start;
-  background-image: url(/assets/images/ajnmir1srt.png);
-}
+@media (max-width:1093px) {
+  .main__location-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.main__title-discount {
-  text-align: center;
-}
-
-.container__discount {
-  display: flex;
-  justify-content: center;
-  font-weight: lighter;
-}
-
-.discount__percent {
-  padding-bottom: 5rem;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 90pt;
-  font-weight: 900;
-  background-image: linear-gradient(to right,
-      rgba(21, 119, 228, 1) 15%,
-      rgba(0, 212, 131, 1) 50%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.discount__percent img {
-  position: relative;
-  top: 20px;
-}
-
-/*================main__location section============================================*/
-
-.main__location-box {
-  display: grid;
-  grid-template-columns: 50% 1fr;
-  width: 80vw;
-}
-
-.main__location-nav {
-  padding-top: 20%;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  color: #4c65ad;
-}
-
-.main__location-link {
-  margin-left: 1%;
+  .main__location-adres,
+  .main__location-whats {
+    padding-left: 10%;
+  }
 }
 
 /*====================================footer=======================================================*/
