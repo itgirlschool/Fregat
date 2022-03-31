@@ -597,7 +597,9 @@ h1,
   margin-left: 200px;
   margin-top: 300px;
 }
-
+ol{
+  padding-left: .2em;
+}
 .header-register {
   display: inline-block;
   margin-bottom: 3rem;
@@ -606,7 +608,7 @@ h1,
 }
 
 .header-register__list {
-  list-style: none;
+  list-style:none;
   counter-reset: li-counter;
 }
 
@@ -760,6 +762,73 @@ h1,
 .register-img img {
   max-width: 100%;
 }
+@media screen and (max-width:780px){
+  
+  .main__register-form{
+  width: 80vw;
+  margin-left: 30px;
+  margin-top: 30px;
+  }
+  .header-register__list li {
+    display:inline-block;
+    font-size: 18px;
+  }
+  
+  .header-register__list li::before {
+    font-size: 16px;
+    width: 18px;
+    height: 18px;
+  }
+  .register-blok{
+    display:flex;
+    flex-direction: column;
+    padding:1%;
+    padding: 0px 0px 100px 0px;
+   
+  }
+  .register-box__title,
+  .register-box2__title,
+  .register-box3__title,
+  .register-box4__title {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+}
+.register-box__style,
+.register-box2__style,
+.register-box3__style,
+.register-box4__style {
+  font-size: 13px;
+  margin: 5px 0px 0px 0px;
+}
+.register-box__style{
+  width: 80px;
+  padding: 0px 5px;
+}
+.register-box2__style,
+.register-box3__style,
+.register-box4__style {
+  width:200px;
+  padding: 5px 0px 5px 5px
+}
+.register-box4__style {
+  padding: 5px 0px 100px 5px;
+}
+.register-button__book {
+  display: flex;
+  width: 200px;
+  height: 35px;
+  font-size: 13px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 13px 0px;
+}
+.register-img{
+  display:none
+}
+}
+
+
+
 
 <<<<<<< HEAD
 
