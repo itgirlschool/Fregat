@@ -13,13 +13,20 @@
 <body>
     <header class="header" style="background: url(./assets/images/Видозером1srt.png);">
         <nav class="header__nav">
-            <div class="header__navbar menu">
-                <a class="header__links" href="#">Номера и цены</a>
-                <a class="header__links" href="#">Услуги</a>
-                <a class="header__links" href="#">О базе отдыха</a>
-                <a class="header__links" href="#">Отзывы</a>
-                <a class="header__links" href="#">Контакты</a>
-            </div>
+            <ul class="header__navbar menu">
+                <li class="header__navbar-li"><a class="header__links" href="#">Номера и цены</a></li>
+                <li class="header__navbar-li"><a class="header__links" href="#">Услуги</a>
+                    <ul class="header__navbar-drop">
+                        <li class="header__drop"><a class="header__links" href="#">Сибирский чан</a></li>
+                        <li class="header__drop"><a class="header__links" href="#">Мангал на природе</a></li>
+                        <li class="header__drop"><a class="header__links" href="#">Прокат велосипедов</a></li>
+                        <li class="header__drop"><a class="header__links" href="#">Ресторан "Фрегат"</a></li>
+                    </ul>
+                </li>
+                <li class="header__navbar-li"><a class="header__links" href="#">О базе отдыха</a></li>
+                <li class="header__navbar-li"><a class="header__links" href="#">Отзывы</a></li>
+                <li class="header__navbar-li"><a class="header__links" href="#">Контакты</a></li>
+            </ul>
             <div class="header__logo">
                 <img src="./assets/images/logo1str.png" alt="logo">
             </div>
@@ -38,12 +45,6 @@
                 <a class="header__calllinks" href="#">Заказать звонок</a>
             </div>
         </nav>
-        <div class="header__spisok-nav">
-            <p class="header__spisok-text">Сибирский чан</p>
-            <p class="header__spisok-text">Мангал на природе</p>
-            <p class="header__spisok-text">Прокат велосипедов</p>
-            <p class="header__spisok-text">Ресторан "Фрегат"</p>
-        </div>
 
         <div class="header__title">
             <div class="header__left-title">
@@ -586,47 +587,38 @@
             </div>
             <div class="main__location-box">
                 <diV class="main__location-maps">
-                    <img class="main__location-foto foto" src="./assets/images/cxema1srt.png" alt="karta">
-                </diV>
+                    <img class="main__location-foto foto" src="./assets/images/cxema1srt.png" alt="karta"> </diV>
                 <diV class="main__location-info">
-                    <h3 class="main__location-title" id="map">Наши конакты</h3>
-                    <div class="main__contact-telefon">
-                        <p class="main__txt"><img class="main__icon" src="./assets/images/iconcotel.png"
-                                alt="telefon">Звоните по
-                            телефонам:</p>
-                        <div class="main__telefon">
-                            <p class="main__location-text">+7 (3952) 56-00-26</p>
-                            <p class="main__location-text">+7 (3952) 95-26-55</p>
-                        </div>
-                        <p class="main__location-text">+7 (3952) 95-26-55</p>
+                    <h3 class="main__location-textt">Наши конакты</h3>
+                    <div class="main__location-telefon">
+                        <h4 class="main__location-text"><img class="main__location-icon"
+                                src="./assets/images/iconcotel.png" alt="telefon">Звоните по телефонам:</h4>
+                        <p class="main__location-tele">+7 (3952) 56-00-26</p>
+                        <p class="main__location-tele">+7 (3952) 95-26-55</p>
                     </div>
-                    <div class="main__contact-email">
-                        <p class="main__txt"><img class="main__icon" src="./assets/images/emailsrt1.png"
-                                alt="email">Электронная
-                            почта:</p>
-                        <p class="main__location-text">952655@rambler.ru</p>
+                    <div class="main__location-email">
+                        <h4 class="main__location-text"><img class="main__location-icon"
+                                src="./assets/images/emailsrt1.png" alt="email">Электронная почта:</h4>
+                        <p class="main__location-rambler">952655@rambler.ru</p>
+
                     </div>
-                    <div class="main__contact-adress">
-                        <p class="main__txt"><img class="main__icon" src="./assets/images/adresssrt1.png"
-                                alt="adress">Адрес
-                            офиса</p>
-                        <p class="main__location-text">г. Иркутск, ул. Волжская, 51а, 1 этаж</p>
-
-                    </diV>
-                    <div class="main__contact-adress2">
-                        <p class="main__txt"><img class="main__icon" src="./assets/images/adressstr1.png"
-                                alt="adress">Адрес базы
-                            отдыха</p>
-                        <p class="main__location-text">Ольхонский район, Куркутский залив, мыс Бурлог</p>
-
-                    </diV>
-                    <div class="main__contact-vopros">
-                        <p class="main__txt">Остались вопросы?</p>
-                        <p class="main__location-text">Напишите нам в <img class="main__icon icon-whatsaap"
-                                src="./assets/images/voproswhaatstr1.png" alt="whatsaap"><a class="main__whatsapp"
-                                href="#">WhatsApp</a></p>
-                    </diV>
-                </div>
+                    <div class="main__location-adress">
+                        <h4 class="main__location-text"><img class="main__location-icon"
+                                src="./assets/images/adresssrt1.png" alt="adress">Адрес офиса</h4>
+                        <p class="main__location-adres">г. Иркутск, ул. Волжская, 51а, 1 этаж</p>
+                    </div>
+                    <div class="main__location-baza">
+                        <h4 class="main__location-text"><img class="main__location-icon"
+                                src="./assets/images/adressstr1.png" alt="adress">Адрес базы отдыха</h4>
+                        <p class="main__location-adres">Ольхонский район, Куркутский залив, мыс Бурлог</p>
+                    </div>
+                    <div class="main__location-whattsap">
+                        <h3 class="main__location-textt">Остались вопросы?</h3>
+                        <p class="main__location-whats">Напишите нам в <img class="main__location-iconwhats"
+                                src="./assets/images/voproswhaatstr1.png" alt="whatsapp">
+                            <a class="main__location-ssilka" href="#">WhatsApp</a></p>
+                    </div>
+                </diV>
             </div>
         </div>
     </main>
