@@ -14,7 +14,6 @@ font-family: 'Lora', serif;
 
 body {
   background-color: #e5e5e5;
-  ;
 }
 
 .header {
@@ -178,7 +177,7 @@ a:-webkit-any(link) {
   display: flex;
 }
 
-.question-catalog__style[type='radio'] {
+.question-catalog__style[type="radio"] {
   display: none;
 }
 
@@ -200,7 +199,7 @@ a:-webkit-any(link) {
   background-color: #4c64ad;
 }
 
-.question-catalog__style[type=radio]:checked+label:before {
+.question-catalog__style[type="radio"]:checked + label:before {
   display: none;
 }
 
@@ -217,7 +216,7 @@ a:-webkit-any(link) {
   margin: 0px 0px 17px 0px;
 }
 
-.question-catalog__style[type=radio]:checked+label {
+.question-catalog__style[type="radio"]:checked + label {
   border: 1px solid rgba(76, 101, 173, 1);
   max-width: 239px;
   padding: 11px 190px 11px 35px;
@@ -225,9 +224,11 @@ a:-webkit-any(link) {
 
 /*===================================card======================*/
 .aside__card {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(73, 187, 255, 0.12) 0%,
-      rgba(124, 206, 255, 0.56) 100%),
+      rgba(124, 206, 255, 0.56) 100%
+    ),
     #eff9ff;
   margin-top: 25px;
 }
@@ -249,7 +250,6 @@ a:-webkit-any(link) {
   font-weight: 500;
   padding: 0px 0px 0px 7px;
 }
-
 
 .card-title {
   padding: 15px 0px 0px 0px;
@@ -328,7 +328,6 @@ a:-webkit-any(link) {
   line-height: 15px;
 }
 
-
 .type-room__pic {
   z-index: -2;
   width: 20vw;
@@ -355,7 +354,7 @@ a:-webkit-any(link) {
 }
 
 .room-tour__available span {
-  color: #01C839;
+  color: #01c839;
 }
 
 .room-tour__title {
