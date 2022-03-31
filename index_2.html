@@ -56,7 +56,72 @@
             <aside class="aside">
                 <div class="aside__container">
                     <div class="aside__content">
-                        <div class="aside__catalog">Каталог номеров</div>
+                        <div class="aside__filter">
+                            <div class="question-catalog">
+                                <div class="question-catalog__title"> Каталог номеров</div>
+                                <form class="question-catalog__variants">
+                                    <div class="question-catalog__number">
+                                        <input class="question-catalog__style" type="radio" id="numbera" name="ritem"
+                                            value="ropt1" checked>
+                                        <label class="question-catalog__point" for="numbera">Отель</label>
+                                    </div>
+
+                                    <div class="question-catalog__number">
+                                        <input class="question-catalog__style" type="radio" id="numberb" name="ritem"
+                                            value="ropt2">
+                                        <label class="question-catalog__point" for="numberb">Коттедж</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="question-catalog">
+                                <div class="question-catalog__title"> Вид из окна</div>
+                                <form class="question-catalog__variants">
+                                    <div class="question-catalog__number">
+                                        <input class="question-catalog__style" type="radio" id="numberc" name="ritem"
+                                            value="ropt3">
+                                        <label class="question-catalog__point" for="numberc">На холм</label>
+                                    </div>
+
+                                    <div class="question-catalog__number">
+                                        <input class="question-catalog__style" type="radio" id="numberd" name="ritem"
+                                            value="ropt4" checked>
+                                        <label class="question-catalog__point" for="numberd">На Байкал</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="question-catalog">
+                                <div class="question-catalog__title"> Наличие балкона</div>
+                                <form class="question-catalog__variants">
+                                    <div class="question-catalog__number">
+                                        <input class="question-catalog__style" type="radio" id="numbere" name="ritem"
+                                            value="ropt5">
+                                        <label class="question-catalog__point" for="numbere">Есть</label>
+                                    </div>
+
+                                    <div class="question-catalog__number">
+                                        <input class="question-catalog__style" type="radio" id="numberf" name="ritem"
+                                            value="ropt6" checked>
+                                        <label class="question-catalog__point" for="numberf">Нет</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="question-catalog">
+                                <div class="question-catalog__title"> Вид кровати</div>
+                                <form class="question-catalog__variants">
+                                    <div class="question-catalog__number">
+                                        <input class="question-catalog__style" type="radio" id="numberg" name="ritem"
+                                            value="ropt7" checked>
+                                        <label class="question-catalog__point" for="numberg">Двухспальная</label>
+                                    </div>
+
+                                    <div class="question-catalog__number">
+                                        <input class="question-catalog__style" type="radio" id="numberh" name="ritem"
+                                            value="ropt8">
+                                        <label class="question-catalog__point" for="numberh">Односпальная</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <div class="aside__card">
                         <div class="aside__card-text">
@@ -87,7 +152,9 @@
                     <div class="type-room">
                         <div class="type-room__content">
                             <div class="type-room__foto">
-                                <div class="type-room__top">Топ продаж</div>
+                                <div class="type-room__text">
+                                    <div class="type-room__top">Топ продаж</div>
+                                </div>
                                 <img class="type-room__pic" src="./assets/images/nomerstr2.png" alt="room">
                             </div>
                             <div class="room-tour">
@@ -101,22 +168,28 @@
                                 </div>
                                 <div class="room-tour__subtext">Возможно заселение третьего человека, расскладная
                                     кровать за дополнительную оплату</div>
-                                <div class="room__list">
-                                    <ul class="room__items items">
-                                        <li class="items__li">Кондиционер</li>
-                                        <li class="items__li">Душевая кабина</li>
-                                        <li class="items__li">Телевизор</li>
-                                    </ul>
-                                    <ul class="room__items items">
-                                        <li class="items__li">Холодильник</li>
-                                        <li class="items__li">Вид на байкал</li>
-                                        <li class="items__li">Первый этаж</li>
-                                    </ul>
-                                    <ul class="room__items items">
-                                        <li class="items__li">Холодильник</li>
-                                        <li class="items__li">Вид на байкал</li>
-                                        <li class="items__li">Первый этаж</li>
-                                    </ul>
+                                <div class="room-tour__list">
+                                    <div class="room-items1">
+                                        <ul class="room-items1__items items">
+                                            <li class="room-items1__li">Холодильник</li>
+                                            <li class="room-items1__li">Вид на байкал</li>
+                                            <li class="room-items1__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
+                                    <div class="room-items2">
+                                        <ul class="room-items2__items items">
+                                            <li class="room-items2__li">Холодильник</li>
+                                            <li class="room-items2__li">Вид на байкал</li>
+                                            <li class="room-items2__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
+                                    <div class="room-items2">
+                                        <ul class="room-items2__items items">
+                                            <li class="room-items2__li">Холодильник</li>
+                                            <li class="room-items2__li">Вид на байкал</li>
+                                            <li class="room-items2__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="room-information">
                                     <div class="room-information__container">
@@ -124,10 +197,14 @@
                                             <div class="room-information__quantity"> Кол-во. номеров: <span>9</span>
                                             </div>
                                             <div class="room-information__price">Цены за номер: <span>от
-                                                    3500р.</span> </div>
+                                                    3500р.</span>
+                                            </div>
                                         </div>
-                                        <div class="room-information __button">
-                                            <button class="room__button button">Узнать подробнее</button></div>
+                                        <div class="room-information__blok-button">
+                                            <a href="./index_3.html" target="_blank"
+                                                class="room-information__button button">Узнать
+                                                подробнее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +213,9 @@
                     <div class="type-room">
                         <div class="type-room__content2">
                             <div class="type-room__foto">
-                                <div class="type-room__top">Топ продаж</div>
+                                <div class="type-room__text">
+                                    <div class="type-room__top">Топ продаж</div>
+                                </div>
                                 <img class="type-room__pic" src="./assets/images/nomerstr2.png" alt="room">
                             </div>
                             <div class="room-tour">
@@ -150,22 +229,28 @@
                                 </div>
                                 <div class="room-tour__subtext">Возможно заселение третьего человека, расскладная
                                     кровать за дополнительную оплату</div>
-                                <div class="room__list">
-                                    <ul class="room__items items">
-                                        <li class="items__li">Кондиционер</li>
-                                        <li class="items__li">Душевая кабина</li>
-                                        <li class="items__li">Телевизор</li>
-                                    </ul>
-                                    <ul class="room__items items">
-                                        <li class="items__li">Холодильник</li>
-                                        <li class="items__li">Вид на байкал</li>
-                                        <li class="items__li">Первый этаж</li>
-                                    </ul>
-                                    <ul class="room__items items">
-                                        <li class="items__li">Холодильник</li>
-                                        <li class="items__li">Вид на байкал</li>
-                                        <li class="items__li">Первый этаж</li>
-                                    </ul>
+                                <div class="room-tour__list">
+                                    <div class="room-items1">
+                                        <ul class="room-items1__items items">
+                                            <li class="room-items1__li">Холодильник</li>
+                                            <li class="room-items1__li">Вид на байкал</li>
+                                            <li class="room-items1__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
+                                    <div class="room-items2">
+                                        <ul class="room-items2__items items">
+                                            <li class="room-items2__li">Холодильник</li>
+                                            <li class="room-items2__li">Вид на байкал</li>
+                                            <li class="room-items2__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
+                                    <div class="room-items2">
+                                        <ul class="room-items2__items items">
+                                            <li class="room-items2__li">Холодильник</li>
+                                            <li class="room-items2__li">Вид на байкал</li>
+                                            <li class="room-items2__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="room-information">
                                     <div class="room-information__container">
@@ -173,10 +258,14 @@
                                             <div class="room-information__quantity"> Кол-во. номеров: <span>9</span>
                                             </div>
                                             <div class="room-information__price">Цены за номер: <span>от
-                                                    3500р.</span> </div>
+                                                    3500р.</span>
+                                            </div>
                                         </div>
-                                        <div class="room-information __button">
-                                            <button class="room__button button">Узнать подробнее</button></div>
+                                        <div class="room-information__blok-button">
+                                            <a href="./index_3.html" target="_blank"
+                                                class="room-information__button button">Узнать
+                                                подробнее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +274,9 @@
                     <div class="type-room">
                         <div class="type-room__content">
                             <div class="type-room__foto">
-                                <div class="type-room__top">Топ продаж</div>
+                                <div class="type-room__text">
+                                    <div class="type-room__top">Топ продаж</div>
+                                </div>
                                 <img class="type-room__pic" src="./assets/images/nomerstr2.png" alt="room">
                             </div>
                             <div class="room-tour">
@@ -199,22 +290,28 @@
                                 </div>
                                 <div class="room-tour__subtext">Возможно заселение третьего человека, расскладная
                                     кровать за дополнительную оплату</div>
-                                <div class="room__list">
-                                    <ul class="room__items items">
-                                        <li class="items__li">Кондиционер</li>
-                                        <li class="items__li">Душевая кабина</li>
-                                        <li class="items__li">Телевизор</li>
-                                    </ul>
-                                    <ul class="room__items items">
-                                        <li class="items__li">Холодильник</li>
-                                        <li class="items__li">Вид на байкал</li>
-                                        <li class="items__li">Первый этаж</li>
-                                    </ul>
-                                    <ul class="room__items items">
-                                        <li class="items__li">Холодильник</li>
-                                        <li class="items__li">Вид на байкал</li>
-                                        <li class="items__li">Первый этаж</li>
-                                    </ul>
+                                <div class="room-tour__list">
+                                    <div class="room-items1">
+                                        <ul class="room-items1__items items">
+                                            <li class="room-items1__li">Холодильник</li>
+                                            <li class="room-items1__li">Вид на байкал</li>
+                                            <li class="room-items1__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
+                                    <div class="room-items2">
+                                        <ul class="room-items2__items items">
+                                            <li class="room-items2__li">Холодильник</li>
+                                            <li class="room-items2__li">Вид на байкал</li>
+                                            <li class="room-items2__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
+                                    <div class="room-items2">
+                                        <ul class="room-items2__items items">
+                                            <li class="room-items2__li">Холодильник</li>
+                                            <li class="room-items2__li">Вид на байкал</li>
+                                            <li class="room-items2__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="room-information">
                                     <div class="room-information__container">
@@ -222,10 +319,14 @@
                                             <div class="room-information__quantity"> Кол-во. номеров: <span>9</span>
                                             </div>
                                             <div class="room-information__price">Цены за номер: <span>от
-                                                    3500р.</span> </div>
+                                                    3500р.</span>
+                                            </div>
                                         </div>
-                                        <div class="room-information __button">
-                                            <button class="room__button button">Узнать подробнее</button></div>
+                                        <div class="room-information__blok-button">
+                                            <a href="./index_3.html" target="_blank"
+                                                class="room-information__button button">Узнать
+                                                подробнее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +335,9 @@
                     <div class="type-room">
                         <div class="type-room__content4">
                             <div class="type-room__foto">
-                                <div class="type-room__top">Топ продаж</div>
+                                <div class="type-room__text">
+                                    <div class="type-room__top">Топ продаж</div>
+                                </div>
                                 <img class="type-room__pic" src="./assets/images/nomerstr2.png" alt="room">
                             </div>
                             <div class="room-tour">
@@ -248,22 +351,28 @@
                                 </div>
                                 <div class="room-tour__subtext">Возможно заселение третьего человека, расскладная
                                     кровать за дополнительную оплату</div>
-                                <div class="room__list">
-                                    <ul class="room__items items">
-                                        <li class="items__li">Кондиционер</li>
-                                        <li class="items__li">Душевая кабина</li>
-                                        <li class="items__li">Телевизор</li>
-                                    </ul>
-                                    <ul class="room__items items">
-                                        <li class="items__li">Холодильник</li>
-                                        <li class="items__li">Вид на байкал</li>
-                                        <li class="items__li">Первый этаж</li>
-                                    </ul>
-                                    <ul class="room__items items">
-                                        <li class="items__li">Холодильник</li>
-                                        <li class="items__li">Вид на байкал</li>
-                                        <li class="items__li">Первый этаж</li>
-                                    </ul>
+                                <div class="room-tour__list">
+                                    <div class="room-items1">
+                                        <ul class="room-items1__items items">
+                                            <li class="room-items1__li">Холодильник</li>
+                                            <li class="room-items1__li">Вид на байкал</li>
+                                            <li class="room-items1__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
+                                    <div class="room-items2">
+                                        <ul class="room-items2__items items">
+                                            <li class="room-items2__li">Холодильник</li>
+                                            <li class="room-items2__li">Вид на байкал</li>
+                                            <li class="room-items2__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
+                                    <div class="room-items2">
+                                        <ul class="room-items2__items items">
+                                            <li class="room-items2__li">Холодильник</li>
+                                            <li class="room-items2__li">Вид на байкал</li>
+                                            <li class="room-items2__li">Первый этаж</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="room-information">
                                     <div class="room-information__container">
@@ -271,10 +380,14 @@
                                             <div class="room-information__quantity"> Кол-во. номеров: <span>9</span>
                                             </div>
                                             <div class="room-information__price">Цены за номер: <span>от
-                                                    3500р.</span> </div>
+                                                    3500р.</span>
+                                            </div>
                                         </div>
-                                        <div class="room-information __button">
-                                            <button class="room__button button">Узнать подробнее</button></div>
+                                        <div class="room-information__blok-button">
+                                            <a href="./index_3.html" target="_blank"
+                                                class="room-information__button button">Узнать
+                                                подробнее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -283,61 +396,65 @@
                 </div>
             </main>
         </div>
+        <section class="main__gallery">
+            <div class="photos-area">
+                <div class="photos-area__title title">
+                    Фотографии местности <br> и базы отдыха
+                </div>
+            </div>
+            <div class="main__fhotos">
+                <div class="gallery-block">
+                    <div class="gallery-block__photo1">
+                        <img src="assets/images/kartinra1str2.png" alt="photo1">
+                    </div>
+                    <div class="gallery-block__photo2">
+                        <img src="assets/images/kartinka2str2.png" alt="photo2">
+                        <img src="assets/images/kartinka3str2.png" alt="photo3">
+                    </div>
+                    <div class="gallery-block__photo3">
+                        <img src="assets/images/kartinka4str2.png" alt="photo4">
+                    </div>
+                </div>
+                <div class="gallery-block2">
+                    <div class="gallery-block2__photo1">
+                        <img src="assets/images/kartink5str2.png" alt="photo5">
+                        <img src="assets/images/kartinka6str2.png" alt="photo6">
+                    </div>
+                    <div class="gallery-block2__photo2">
+                        <img src="assets/images/kartinka7str2.png" alt="photo7">
+                    </div>
+                    <div class="gallery-block2__photo3">
+                        <img src="assets/images/kartinka8str2.png" alt="photo8">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-button">
+                <a href="#" class="gallery-button__watch button">Посмотреть фотогалерею</a>
+            </div>
     </div>
-    <div class="main__gallery">
-        <div class="photos-area">
-            <div class="photos-area__title title">
-                Фотографии местности <br> и базы отдыха
-            </div>
-        </div>
-        <div class="main__fhotos">
-            <div class="gallery-block">
-                <div class="gallery-block_photo1">
-                    <img src="assets/images/kartinra1str2.png">
-                </div>
-                <div class="gallery-block_photo2">
-                    <img src="assets/images/kartinka2str2.png">
-                    <img src="assets/images/kartinka3str2.png">
-                </div>
-                <div class="gallery-block_photo3">
-                    <img src="assets/images/kartinka4str2.png">
-                </div>
-            </div>
-            <div class="gallery-block2">
-                <div class="gallery-block2_photo1">
-                    <img src="assets/images/kartink5str2.png">
-                    <img src="assets/images/kartinka6str2.png">
-                </div>
-                <div class="gallery-block2_photo2">
-                    <img src="assets/images/kartinka7str2.png">
-                </div>
-                <div class="gallery-block2_photo3">
-                    <img src="assets/images/kartinka8str2.png">
-                </div>
-            </div>
-        </div>
-        <div class="gallery-button">
-            <button class="gallery-button__watch button">Посмотреть фотогалерею</button>
-        </div>
-    </div>
+    </section>
     <footer class="footer">
         <div class="menu__list-footer">
             <ul class="menu__list">
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Главная</a></li>
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Номера и цены</a></li>
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Услуги и развлечения</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="./index.html">Главная</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="./index_2.html">Номера и цены</a>
+                </li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="index.html#service">Услуги и
+                        развлечения</a></li>
             </ul>
             <ul class="menu__list">
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">О нас</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="./index.html#about">О нас</a></li>
                 <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Памятка туриста</a></li>
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Схема проезда</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="index.html#map">Схема проезда</a>
+                </li>
             </ul>
             <ul class="menu__list">
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Отзывы</a></li>
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Контакты</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="./index.html#review">Отзывы</a>
+                </li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="index.html#map">Контакты</a></li>
             </ul>
         </div>
-        <div class="container__footer__btn">
+        <div class="container__footer-btn">
             <button class="footer__btn">Получить консультацию</button></div>
         <div class="footer__contacts">
             <div class="phone footer__phone">

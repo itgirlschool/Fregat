@@ -209,6 +209,8 @@ a:-webkit-any(link) {
   width: 100%;
   border-top: 1px solid rgb(194, 193, 193);
   border-bottom: 1px solid rgb(194, 193, 193);
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 .description__button {
   background-color: inherit;
@@ -244,16 +246,25 @@ a:-webkit-any(link) {
   display: flex;
   justify-content: space-between;
 }
+.container__roomcards-margin {
+  margin-bottom: 5rem;
+}
 .roomcard-mini {
   display: grid;
   width: 25vw;
   background-color: #ffff;
   padding: 1rem;
-  margin: 5rem 1rem 0 0;
+  margin: 3rem 1rem 0 0;
+}
+
+.roomcard__pic-mini {
+  display: flex;
+  justify-content: center;
 }
 .roomcard__pic-mini img {
-  max-width: 380px;
+  max-width: 100%;
 }
+
 .container__mini-items {
   display: flex;
   justify-content: space-between;
@@ -296,7 +307,7 @@ a:-webkit-any(link) {
   flex-direction: column;
   margin: 0.5em;
 }
-.container__footer__btn {
+.container__footer-btn {
   grid-area: btn;
   display: flex;
   align-content: center;
