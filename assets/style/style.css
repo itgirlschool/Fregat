@@ -1257,7 +1257,7 @@ ol {
 .main__location-whats {
   padding-left: 23%;
   font-family: "Raleway", sans-serif;
-  font-size: 10pt;
+  font-size: 13pt;
   font-weight: bolder;
 }
 
@@ -1266,7 +1266,7 @@ ol {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: "Raleway", sans-serif;
-  font-size: 13pt;
+  font-size: 15pt;
   font-weight: 500;
 
 }
@@ -1284,6 +1284,19 @@ ol {
 
 .main__location-ssilka {
   color: #000000;
+}
+
+@media (max-width:1093px) {
+  .main__location-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main__location-adres,
+  .main__location-whats {
+    padding-left: 10%;
+  }
 }
 
 /* =======================main__location section======================================*/
