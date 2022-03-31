@@ -769,7 +769,7 @@ ol {
 @media screen and (max-width: 768px) {
   .main__register-form {
     width: 80vw;
-    margin-left: 80px;
+    margin-left: 30px;
     margin-top: 30px;
   }
 
