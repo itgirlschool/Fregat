@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,21 +13,13 @@
 <body>
     <header class="header" style="background: url(./assets/images/Видозером1srt.png);">
         <nav class="header__nav">
-            <ul class="header__navbar menu">
-                <li class="header__navbar-li"><a class="header__links" href="#">Номера и цены</a></li>
-                <li class="header__navbar-li"><a class="header__links" href="#">Услуги</a>
-                    <ul class="header__navbar-drop">
-                        <li class="header__drop"><a class="header__links" href="#">Сибирский чан</a></li>
-                        <li class="header__drop"><a class="header__links" href="#">Мангал на природе</a></li>
-                        <li class="header__drop"><a class="header__links" href="#">Прокат велосипедов</a></li>
-                        <li class="header__drop"><a class="header__links" href="#">Ресторан "Фрегат"</a></li>
-                    </ul>
-
-                </li>
-                <li class="header__navbar-li"><a class="header__links" href="#">О базе отдыха</a></li>
-                <li class="header__navbar-li"><a class="header__links" href="#">Отзывы</a></li>
-                <li class="header__navbar-li"><a class="header__links" href="#">Контакты</a></li>
-            </ul>
+            <div class="header__navbar menu">
+                <a class="header__links" href="#">Номера и цены</a>
+                <a class="header__links" href="#">Услуги</a>
+                <a class="header__links" href="#">О базе отдыха</a>
+                <a class="header__links" href="#">Отзывы</a>
+                <a class="header__links" href="#">Контакты</a>
+            </div>
             <div class="header__logo">
                 <img src="./assets/images/logo1str.png" alt="logo">
             </div>
@@ -35,9 +27,8 @@
                 <img class="header__pfonepic" src="./assets/images/telefon1str.png" alt="telefon">8(3952)56-00-26
             </div>
             <div class="header__pfone">
-                <img class="header__pfonepic" src="./assets/images/telefon1str.png" alt="telefon">8(3952)56-00-26
+                <img class="header__pfonepic" src="./assets/images/telefon1str.png" alt="telefon">8(3952)56-00-26</div>
             </div>
-
             <div class="header__socseti">
                 <img class="header__socseti-pic" src="./assets/images/viber1str.png" alt="viber">
                 <img class="header__socseti-pic" src="./assets/images/instagram1srt.png" alt="instagramm">
@@ -45,9 +36,15 @@
             </div>
             <div class="header__call">
                 <a class="header__calllinks" href="#">Заказать звонок</a>
-            </div>
-
         </nav>
+        </div>
+        <div class="header__spisok-nav">
+            <p class="header__spisok-text">Сибирский чан</p>
+            <p class="header__spisok-text">Мангал на природе</p>
+            <p class="header__spisok-text">Прокат велосипедов</p>
+            <p class="header__spisok-text">Ресторан "Фрегат"</p>
+        </div>
+
 
         <div class="header__title">
             <div class="header__left-title">
@@ -98,7 +95,7 @@
     </header>
     <main class="main">
         <section class="main__section section">
-            <h2 class="main__title-intro" id="about">Причин, почему для отдыха на<br>Байкале нужно выбрать “Фрегат”</h2>
+            <h2 class="main__title-intro">Причин, почему для отдыха на<br>Байкале нужно выбрать “Фрегат”</h2>
             <div class="main__intro">
                 <div class="main__ihfo">
                     <img class="main__foto foto" src="./assets/images/pazme1str.png" alt="hause">
@@ -272,8 +269,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main__register">
+
+<div class="main__register">
             <div class="main__register-form">
                 <section class="header-register">
                     <ol class="header-register__list">
@@ -283,24 +280,6 @@
                         <hr class="header-register__line">
                         <li><span>Оплата</span></li>
                     </ol>
-<<<<<<< HEAD
-                </header>
-                <div class="register_wrapper" >
-                    <div class="register_box1">
-                        <h3 class="main__register1-text">Забронировать номер</h3>
-                    </div>
-                    <div class="register_box2">
-                        <img class="register_foto foto" src="./assets/images/roomcard.png" alt="roomcard">
-                    </div>
-                    <div class="register_box3">
-                        <label for="arrival_date">Дата заезда</label>
-                        <div class="dropdown_arrival">
-                            <input class ="arrival_date" type="date" name="arrival_date">
-                            <div class="register_box3_1">
-                                <label for="departure_date">Дата oтъезда</label>
-                                <div class="dropdown_departure"> </div>
-                                <input type="date">
-=======
                 </section>
                 <div class="register-blok">
                     <div class="register-blok__colum1">
@@ -321,7 +300,6 @@
                                     <option value="Option1">Гостиничный корпус</option>
                                     <option value="Option2">Коттедж (отдельный дом)</option>
                                 </select>
->>>>>>> ca334889130f7d28942374809414a3921aa22dbe
                             </div>
                         </div>
                         <div class="register-box2">
@@ -345,49 +323,6 @@
                             <input class="register-button__book" type="button" value="Забронировать номер">
                         </div>
                     </div>
-<<<<<<< HEAD
-                    <div class="register_box4">
-                        <form class="form_box4">
-                            <label for="fname">Имя</label><br>
-                            <input class="input-field"type="text" id="name" value="Введите ваше имя"><br>
-                        </form>
-                    </div>
-                    <div class="register_box5">
-                        <label for="type of housing">Вид жилья</label><br>
-                        <select name="Type of housing">
-                            <option value="Option1">Гостиничный корпус</option>
-                            <option value="Option2">Коттедж (отделный дом)</option>
-                        </select>
-                    </div>
-                    <div class="register_box6">
-                        <form>
-                            <label for="fname"> Телефон</label><br>
-                            <input type="text" id="name" value="Введите ваш номер телефона"><br>
-                        </form>
-                    </div>
-                    <div class="register_box7">
-                        <label for="Roomtype">Вид номера</label><br>
-                        <select name="Roomtype" id="Roomtype" style="width:466px; height:64px;">
-                            <option value="Option1"> Номер 1-Категории “Стандарт”</option>
-                            <option value="Option2"> Номер 1-Категории “Стандарт”</option>
-                            <option value="Option3"> Номер 1-Категории “Стандарт”</option>
-                        </select>
-                    </div>
-                    <div class="register_box8">
-                        <form>
-                            <label for="fname"> Комментарий</label><br>
-                            <input type="text8" id="name" value="Введите ваш комментарий"><br>
-                        </form>
-                    </div>
-                    <div class="register_box9">
-                        <form>
-                            <label for="fname"> Колличество человек</label><br>
-                            <input type="text9" id="name" value="Введите колличество отдыхающих"><br>
-                        </form>
-                    </div>
-                    <div class="register_box10">
-                        <button class="main__register-btn">Забронировать номер</button>
-=======
                     <div class="register-blok__colum2">
                         <div class="register-box3">
                             <form class="register-box3__direction">
@@ -399,7 +334,8 @@
                         <div class="register-box3">
                             <form class="register-box3__direction">
                                 <label class="register-box3__title" for="fname"> Телефон</label><br>
-                                <input class="register-box3__style" type="text" id="name"
+
+<input class="register-box3__style" type="text" id="name"
                                     placeholder="Введите ваш телефон"><br>
                             </form>
                         </div>
@@ -413,15 +349,13 @@
                     </div>
                     <div class="register-img">
                         <img src="./assets/images/roomcard.png" alt="register-img">
->>>>>>> ca334889130f7d28942374809414a3921aa22dbe
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div>            
 
         <section class="main__section section">
-            <div class="main__cards-entertaiment" id="service">
+            <div class="main__cards-entertaiment">
                 <h2 class="main__cards-txt">Услуги и развлечения</h2>
                 <div class="main__cards-conteiner">
                     <div class="main__cards-blok">
@@ -534,106 +468,8 @@
                 </div>
             </div>
         </section>
-        <section class="main__gallery">
-            <div class="photos-area">
-                <div class="photos-area__title title">
-                    Фотографии местности <br> и базы отдыха
-                </div>
-            </div>
-            <div class="main__fhotos">
-                <div class="gallery-block">
-                    <div class="gallery-block__photo1">
-                        <img src="assets/images/kartinra1str2.png">
-                    </div>
-                    <div class="gallery-block__photo2">
-                        <img src="assets/images/kartinka2str2.png">
-                        <img src="assets/images/kartinka3str2.png">
-                    </div>
-                    <div class="gallery-block__photo3">
-                        <img src="assets/images/kartinka4str2.png">
-                    </div>
-                </div>
-                <div class="gallery-block2">
-                    <div class="gallery-block2__photo1">
-                        <img src="assets/images/kartink5str2.png">
-                        <img src="assets/images/kartinka6str2.png">
-                    </div>
-                    <div class="gallery-block2__photo2">
-                        <img src="assets/images/kartinka7str2.png">
-                    </div>
-                    <div class="gallery-block2__photo3">
-                        <img src="assets/images/kartinka8str2.png">
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-button">
-                <button class="gallery-button__watch button">Посмотреть фотогалерею</button>
-            </div>
-        </section>
-
-        <div class="container__reviews">
-            <div class="main__reviews">
-                <div class="container__reviews-title">
-                    <h3 class="main__title" id="review">Отзывы о базе отдыха “Фрегат”</h3>
-                </div>
-                <div class="container__reviews-cards">
-                    <div class="reviews__card"> <img class="reviews-quotes" src="./assets/images/otziv1str.png"
-                            alt="ковычки">
-                        <img class="reviews-inst" src="./assets/images/Vectorinst1srt.png" alt="instagram icon">
-                        <div class="review">"Не в первый раз отдыхаем <br>на этой базе. Как всегда всё<br>
-                            великолепно:
-                            радушный приём,<br>
-                            отличное
-                            питание,<br> уютное пребывание и <br>благоустроенный пляж. <br>Рекомендую всем для
-                            <br>семейного
-                            отдыха"</div>
-                    </div>
-                    <div class="reviews__card"><img class="reviews-quotes" src="./assets/images/otziv1str.png"
-                            alt="ковычки">
-                        <img class="reviews-inst" src="./assets/images/Vectorinst1srt.png" alt="instagram icon">
-                        <div class="review">"Не в первый раз отдыхаем <br>на этой базе. Как всегда всё<br> великолепно:
-                            радушный приём,<br>
-                            отличное
-                            питание,<br> уютное пребывание и <br>благоустроенный пляж. <br>Рекомендую всем для
-                            <br>семейного
-                            отдыха"</div>
-                    </div>
-                    <div class="reviews__card"><img class="reviews-quotes" src="./assets/images/otziv1str.png"
-                            alt="ковычки">
-                        <img class="reviews-inst" src="./assets/images/Vectorinst1srt.png" alt="instagram icon">
-                        <div class="review">"Не в первый раз отдыхаем <br>на этой базе. Как всегда всё<br> великолепно:
-                            радушный приём,<br>
-                            отличное
-                            питание,<br> уютное пребывание и <br>благоустроенный пляж. <br>Рекомендую всем для
-                            <br>семейного
-                            отдыха"</div>
-                    </div>
-                </div>
-                <div class="container__reviews-cards">
-                    <div class="reviews__author">
-                        <img src="./assets/images/anastasia1str.png" alt="anastasia's photo">
-                        <div class="reviews__txt">
-                            <div class="reviews__name">Анастасия Ли</div>
-                            <div class="reviews__date">02.10.2021</div>
-                        </div>
-                    </div>
-                    <div class="reviews__author">
-                        <img class="user" src="./assets/images/artem1str.png" alt="artem's icon">
-                        <div class="reviews__txt">
-                            <div class="reviews__name">Артём Сазонов</div>
-                            <div class="reviews__date">02.10.2021</div>
-                        </div>
-                    </div>
-                    <div class="reviews__author">
-                        <img class="user2" src="./assets/images/alex.png" alt="alexandr's photo">
-                        <div class="reviews__txt">
-                            <div class="reviews__name">Александр Ким</div>
-                            <div class="reviews__date">02.10.2021</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="main__gallery"></div>
+        <div class="main__reviews"></div>
 
         <div class="main__discount">
             <div class="container__discount">
@@ -642,7 +478,7 @@
             <div class="discount__percent">
                 20%
                 <img src="./assets/images/kartamir1str.png" alt="card">
-            </div>
+                </img> </div>
         </div>
 
         <div class="main__location section">
@@ -653,72 +489,31 @@
             </div>
             <div class="main__location-box">
                 <diV class="main__location-maps">
-                    <img class="main__location-foto foto" src="./assets/images/cxema1srt.png" alt="karta">
-                </diV>
+                    <img class="main__location-foto foto" src="./assets/images/cxema1srt.png" alt="karta"> </diV>
                 <diV class="main__location-info">
-                    <h3 class="main__location-title" id="map">Наши конакты</h3>
-                    <div class="main__contact-telefon">
-                        <p class="main__txt"><img class="main__icon" src="./assets/images/iconcotel.png"
-                                alt="telefon">Звоните по
-                            телефонам:</p>
-                        <div class="main__telefon">
-                            <p class="main__location-text">+7 (3952) 56-00-26</p>
-                            <p class="main__location-text">+7 (3952) 95-26-55</p>
-                        </div>
-                        <p class="main__location-text">+7 (3952) 95-26-55</p>
-                    </div>
-                    <div class="main__contact-email">
-                        <p class="main__txt"><img class="main__icon" src="./assets/images/emailsrt1.png"
-                                alt="email">Электронная
-                            почта:</p>
-                        <p class="main__location-text">952655@rambler.ru</p>
-                    </div>
-                    <div class="main__contact-adress">
-                        <p class="main__txt"><img class="main__icon" src="./assets/images/adresssrt1.png"
-                                alt="adress">Адрес
-                            офиса</p>
-                        <p class="main__location-text">г. Иркутск, ул. Волжская, 51а, 1 этаж</p>
-
-                    </diV>
-                    <div class="main__contact-adress2">
-                        <p class="main__txt"><img class="main__icon" src="./assets/images/adressstr1.png"
-                                alt="adress">Адрес базы
-                            отдыха</p>
-                        <p class="main__location-text">Ольхонский район, Куркутский залив, мыс Бурлог</p>
-
-                    </diV>
-                    <div class="main__contact-vopros">
-                        <p class="main__txt">Остались вопросы?</p>
-                        <p class="main__location-text">Напишите нам в <img class="main__icon icon-whatsaap"
-                                src="./assets/images/voproswhaatstr1.png" alt="whatsaap"><a class="main__whatsapp"
-                                href="#">WhatsApp</a></p>
-                    </diV>
-                </div>
+                    <h3>Наши конакты</h3>
+                </diV>
             </div>
         </div>
     </main>
     <footer class="footer">
         <div class="menu__list-footer">
             <ul class="menu__list">
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="./index.html">Главная</a></li>
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="./index_2.html">Номера и цены</a>
-                </li>
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="index.html#service">Услуги и
-                        развлечения</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Главная</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Номера и цены</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Услуги и развлечения</a></li>
             </ul>
             <ul class="menu__list">
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="./index.html#about">О нас</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">О нас</a></li>
                 <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Памятка туриста</a></li>
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="index.html#map">Схема проезда</a>
-                </li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Схема проезда</a></li>
             </ul>
             <ul class="menu__list">
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="./index.html#review">Отзывы</a>
-                </li>
-                <li class="menu__item menu__item-footer"><a class="menu__link" href="index.html#map">Контакты</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Отзывы</a></li>
+                <li class="menu__item menu__item-footer"><a class="menu__link" href="#">Контакты</a></li>
             </ul>
         </div>
-        <div class="container__footer-btn">
+        <div class="container__footer__btn">
             <button class="footer__btn">Получить консультацию</button></div>
         <div class="footer__contacts">
             <div class="phone footer__phone">

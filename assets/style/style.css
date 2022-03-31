@@ -418,6 +418,7 @@ h1,
 }
 
 /*==================================register==============================*/
+
 .main__register {
   background-color: ivory;
 }
@@ -526,7 +527,7 @@ h1,
 }
 
 .register-box4__style {
-  padding: 13px 0px 145px 0px;
+  padding: 13px 0px 145px 24px;
 }
 
 .register-box__style {
@@ -535,7 +536,7 @@ h1,
 
 .register-box2__style,
 .register-box3__style {
-  padding: 16px 0px;
+  padding: 16px px 16px 24px;
 }
 
 .register-box__style {
@@ -590,6 +591,7 @@ h1,
 .register-img img {
   max-width: 100%;
 }
+
 
 /*================================cards-blok=============================*/
 .main__cards-blok {
