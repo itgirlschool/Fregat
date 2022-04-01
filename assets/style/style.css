@@ -163,6 +163,27 @@ h1,
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 1340px) {
+  .pfonepic {
+    display: none;
+  }
+
+  .header__nav {
+    display: grid;
+    grid-template-columns: 40% 2fr repeat(3, 13%);
+  }
+
+  .header__logo {
+    margin-left: 5%;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+}
+
 /*=================================== page1_header-footer===================================*/
 
 .header__footer {
@@ -1060,7 +1081,7 @@ ol {
   margin: 2%;
 }
 
-@media (max-width: 1368px) {
+@media (max-width: 1395px) {
 
   .main__cards-textp,
   .main__cards-cena {
@@ -1087,7 +1108,7 @@ ol {
 
 }
 
-@media (max-width: 680px) {
+@media (max-width: 756px) {
 
   .main__cards-textp,
   .main__cards-cena {
