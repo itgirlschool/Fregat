@@ -1108,7 +1108,7 @@ ol {
 .container__reviews-cards {
   display: flex;
   justify-content: space-evenly;
-  margin: 0 0 5rem 0;
+  padding-top: 5%;
   font-family: "Raleway", sans-serif;
 }
 
