@@ -419,7 +419,7 @@ h1,
 
 }
 
-@media (max-width:550px) {
+@media (max-width:591px) {
   .textp {
     display: none;
   }
@@ -587,6 +587,109 @@ h1,
 .room__marker-free--active {
   color: #01c839;
 }
+
+@media (max-width: 1200px) {
+  .container__roomcards {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .roomcard-mini {
+    display: grid;
+    width: 30vw;
+    background-color: #ffff;
+    padding: 1rem;
+    margin: 3rem 1rem 0 0;
+  }
+
+  .main__title {
+    font-size: 40pt;
+  }
+}
+
+@media (max-width: 900px) {
+  .container__roomcards {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .roomcard-mini {
+    display: grid;
+    width: 50vw;
+    background-color: #ffff;
+    padding: 1rem;
+    margin: 3rem 1rem 0 0;
+  }
+
+  .main__title {
+    font-size: 40pt;
+  }
+}
+
+@media (max-width: 591px) {
+  .container__roomcards {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .roomcard-mini {
+    display: grid;
+    width: 60vw;
+    background-color: #ffff;
+    padding: 1rem;
+    margin: 3rem 1rem 0 0;
+  }
+
+  .main__title {
+    font-size: 25pt;
+  }
+
+  .description__button-button1 {
+    margin-left: 22%;
+    margin-bottom: 2%;
+  }
+
+  .description__button-button2 {
+    margin-left: 18%;
+  }
+}
+
+@media (max-width: 460px) {
+  .container__roomcards {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .roomcard-mini {
+    display: grid;
+    width: 70vw;
+    background-color: #ffff;
+    padding: 1rem;
+    margin: 3rem 1rem 0 0;
+  }
+
+  .main__title {
+    font-size: 25pt;
+  }
+
+  .description__button-button1 {
+    margin-left: 18%;
+    margin-bottom: 2%;
+  }
+
+  .description__button-button2 {
+    margin-left: 14%;
+  }
+}
+
 
 /*==================================register==============================*/
 .main__register {
@@ -957,7 +1060,7 @@ ol {
   margin: 2%;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1368px) {
 
   .main__cards-textp,
   .main__cards-cena {
@@ -965,7 +1068,7 @@ ol {
   }
 }
 
-@media (max-width:1145px) {
+@media (max-width:1311px) {
   .main__cards-conteiner {
     display: flex;
     flex-wrap: wrap;
