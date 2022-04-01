@@ -210,7 +210,7 @@ a:-webkit-any(link) {
   list-style: none;
   font-family: "Raleway", sans-serif;
   width: 80vw;
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 30px;
 }
 .breadcrumbs__item1 ::after {
