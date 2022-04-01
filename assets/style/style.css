@@ -816,7 +816,7 @@ ol {
   .register-box2__style,
   .register-box3__style,
   .register-box4__style {
-    width:200px;
+    width: 200px;
     padding: 5px 0px 5px 5px;
   }
 
@@ -838,47 +838,56 @@ ol {
   }
 }
 
-@media (min-width:769px) and (max-width: 1468px){
+@media (min-width:769px) and (max-width: 1468px) {
   .register-img {
     display: none;
   }
-  @media (min-width:769px) and (max-width: 1024px){
-    .register-blok {
-      display: flex;
-      flex-direction: column;
-      padding: 1%;
-      padding: 0px 0px 100px 0px;
-    } 
-    .header-register__list li {
-      display: inline-block;
-      font-size: 18px;
-    }
-    .main__register-form {
-      width: 80vw;
-      margin-left:80px;
-      margin-top: 30px;
-    }
-    .register-button__book {
-      margin: 0px 0px 13px 0px;
-    }
-    .register-box__title,
-    .register-box2__title,
-    .register-box3__title,
-    .register-box4__title {
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+  .register-blok {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    padding: 0px 0px 100px 0px;
+  }
+
+  .header-register__list li {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .main__register-form {
+    width: 80vw;
+    margin-left: 80px;
+    margin-top: 30px;
+  }
+
+  .register-button__book {
+    margin: 0px 0px 13px 0px;
+  }
+
+  .register-box__title,
+  .register-box2__title,
+  .register-box3__title,
+  .register-box4__title {
     font-size: 16px;
     font-weight: 400;
     line-height: 15px;
   }
+
   .register-box2__style,
   .register-box3__style,
   .register-box4__style {
-    width:385px;
+    width: 385px;
     padding: 5px 0px 5px 5px;
-    font-size:13pt;
+    font-size: 13pt;
   }
+
   .register-box4__style {
     padding: 5px 0px 100px 5px;
   }
+}
 
 /*================================cards-blok=============================*/
 .main__cards-blok {
