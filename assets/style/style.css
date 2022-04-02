@@ -393,6 +393,30 @@ h1,
   justify-content: flex-start;
 }
 
+@media (max-width:1280px) {
+
+  .header__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__title-text {
+    text-align: center;
+  }
+
+  .header__botton-text {
+    margin-left: 100px;
+  }
+
+  .title {
+    font-size: 80pt;
+  }
+
+  .header__right-title {
+    display: none;
+  }
+}
+
 @media (min-width: 585px) and (max-width: 1204px) {
 
   .section-text {
@@ -447,31 +471,6 @@ h1,
 }
 
 
-
-
-@media (max-width:1280px) {
-
-  .header__title {
-    display: flex;
-    justify-content: center;
-  }
-
-  .header__title-text {
-    text-align: center;
-  }
-
-  .header__botton-text {
-    margin-left: 100px;
-  }
-
-  .title {
-    font-size: 80pt;
-  }
-
-  .header__right-title {
-    display: none;
-  }
-}
 
 
 /*=================================== page1_main-info===================================*/
