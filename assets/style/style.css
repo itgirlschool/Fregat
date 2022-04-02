@@ -1231,27 +1231,28 @@ ol {
   }
 
   .main__cards-txt {
-    font-size: 35pt;
+    font-size: 30pt;
   }
 
   .main__cards-blok {
     display: flex;
     background-color: white;
-    height: 55vh;
+    height: 45vh;
     padding: 3%;
+    margin-bottom: 20px;
   }
 }
 
-@media (min-width: 820px) and (max-width: 915px) {
+@media (min-width: 769px) and (max-width: 915px) {
   .main__cards-blok {
     display: flex;
     background-color: white;
-    height: 30vh;
+    height: 40vh;
     padding: 3%;
   }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .main__cards-textp,
   .main__cards-cena {
     display: none;
