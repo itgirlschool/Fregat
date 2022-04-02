@@ -1277,7 +1277,7 @@ ol {
 
 @media (max-width: 1395px) {
 
-  .main__cards-textp,
+
   .main__cards-cena {
     font-size: 11pt;
   }
@@ -1292,17 +1292,25 @@ ol {
     flex-direction: column;
   }
 
+
   .main__cards-textp {
-    font-size: 12pt;
+    font-size: 15pt;
   }
 
   .main__cards-txt {
     font-size: 35pt;
   }
 
+  .main__cards-blok {
+    display: flex;
+    background-color: white;
+    height: 55vh;
+    padding: 3%;
+  }
+
 }
 
-@media (max-width: 756px) {
+@media (max-width: 786px) {
 
   .main__cards-textp,
   .main__cards-cena {
@@ -1580,6 +1588,33 @@ ol {
 .review {
   color: #515151;
 }
+
+@media (max-width: 1200px) {
+
+  .reviews__card1,
+  .reviews__author1 {
+    display: none;
+  }
+
+  .main__title {
+    font-size: 35pt;
+  }
+}
+
+
+
+@media (max-width: 786px) {
+
+  .reviews__card2,
+  .reviews__author2 {
+    display: none;
+  }
+
+  .main__title {
+    font-size: 25pt;
+  }
+}
+
 
 
 /*===============================discount=============================================*/
