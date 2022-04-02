@@ -613,7 +613,7 @@ h1,
 /*=================================== page1_main_room_cards===================================*/
 .container-tit {
   margin-top: 0px;
-  padding-top: 20%;
+  padding-top: 200px;
 }
 
 .container,
@@ -632,8 +632,8 @@ h1,
   color: #000000;
   font-family: "Raleway", sans-serif;
   border: 1px solid #1566b3;
-  padding: 1rem 3rem;
-  margin-right: 1rem;
+  padding: 10px 30px;
+  margin-right: 10px;
 }
 
 .description__button:focus,
@@ -655,8 +655,7 @@ h1,
 .main__title {
   color: #4c65ad;
   font-family: "Cormorant Unicase", serif;
-  font-size: 6vh;
-  margin: 5rem 0 2rem 0;
+  font-size: 60pt;
 }
 
 .container__roomcards {
@@ -669,8 +668,8 @@ h1,
   display: grid;
   width: 25vw;
   background-color: #ffff;
-  padding: 1rem;
-  margin: 3rem 1rem 0 0;
+  padding: 10px;
+  margin: 50px 30px 0 0;
 }
 
 .roomcard__pic-mini {
@@ -685,12 +684,12 @@ h1,
 .container__mini-items {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .container__marker-minik {
   margin-top: 24px;
-  padding-left: 1em;
+  padding-left: 10px;
 }
 
 .room__items-mini {
@@ -714,7 +713,8 @@ h1,
   border: solid 1px;
   color: #4c65ad;
   font-family: "Raleway", sans-serif;
-  padding: 0.5rem 3rem;
+  padding: 5px 30px;
+  margin-right: 20px;
 }
 
 .btn-card:hover {
@@ -730,13 +730,13 @@ h1,
 }
 
 .items__li {
-  margin: 0.5rem;
+  margin: 5px;
   font-size: large;
 }
 
 .room__description {
   font-family: "Raleway", sans-serif;
-  margin: 1rem 0;
+  margin: 10px 0;
 }
 
 .room__title {
@@ -747,14 +747,14 @@ h1,
 
 .room__marker {
   display: grid;
-  gap: 5rem;
+  gap: 5px;
   grid-template-columns: 1fr 1fr;
 }
 
 .room__marker-passive {
   color: #545454;
   font-family: "Raleway", sans-serif;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
 }
 
 .room__marker-number,
@@ -773,9 +773,9 @@ h1,
   color: #01c839;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 950px) and (max-width: 1280px) {
   .container__roomcards {
-    width: 80vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -783,10 +783,10 @@ h1,
 
   .roomcard-mini {
     display: grid;
-    width: 30vw;
+    width: 27vw;
     background-color: #ffff;
-    padding: 1rem;
-    margin: 3rem 1rem 0 0;
+    padding: 10px;
+    margin: 30px 10px 0 0;
   }
 
   .main__title {
@@ -794,9 +794,9 @@ h1,
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 949px) {
   .container__roomcards {
-    width: 80vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -805,9 +805,6 @@ h1,
   .roomcard-mini {
     display: grid;
     width: 50vw;
-    background-color: #ffff;
-    padding: 1rem;
-    margin: 3rem 1rem 0 0;
   }
 
   .main__title {
@@ -817,61 +814,23 @@ h1,
 
 @media (max-width: 591px) {
   .container__roomcards {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100vw;
   }
 
   .roomcard-mini {
     display: grid;
-    width: 60vw;
-    background-color: #ffff;
-    padding: 1rem;
-    margin: 3rem 1rem 0 0;
+    width: 90vw;
+    margin: 30px;
   }
 
   .main__title {
     font-size: 25pt;
   }
 
-  .description__button-button1 {
-    margin-left: 22%;
-    margin-bottom: 2%;
-  }
-
+  .description__button-button1,
   .description__button-button2 {
-    margin-left: 18%;
-  }
-}
-
-@media (max-width: 460px) {
-  .container__roomcards {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .roomcard-mini {
-    display: grid;
-    width: 70vw;
-    background-color: #ffff;
-    padding: 1rem;
-    margin: 3rem 1rem 0 0;
-  }
-
-  .main__title {
-    font-size: 25pt;
-  }
-
-  .description__button-button1 {
-    margin-left: 18%;
-    margin-bottom: 2%;
-  }
-
-  .description__button-button2 {
-    margin-left: 14%;
+    width: 90vw;
+    margin: 0 20px 20px 20px;
   }
 }
 
