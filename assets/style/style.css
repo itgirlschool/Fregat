@@ -1283,6 +1283,16 @@ ol {
   }
 }
 
+@media (min-width: 820px) and (max-width: 915px) {
+  .main__cards-blok {
+    display: flex;
+    background-color: white;
+    height: 30vh;
+    padding: 3%;
+  }
+
+}
+
 @media (max-width: 786px) {
   .main__cards-textp,
   .main__cards-cena {
