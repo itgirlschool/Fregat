@@ -86,7 +86,7 @@ h1,
   opacity: 1;
 }
 
-.menu__toggle {
+.hamburger-menu input {
   display: none;
 }
 
@@ -1290,7 +1290,6 @@ ol {
     height: 30vh;
     padding: 3%;
   }
-
 }
 
 @media (max-width: 786px) {
