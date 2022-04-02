@@ -557,6 +557,27 @@ h1,
   }
 }
 
+@media (max-width:900px) {
+  .main__intro {
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+    grid-gap: 5%;
+    padding-right: 0px;
+  }
+
+  .main__ihfo {
+    display: flex;
+    max-width: 25vw;
+    flex-direction: column;
+  }
+
+  .main__info-text {
+
+    width: 30vw;
+  }
+
+}
+
 @media (max-width:820px) {
   .main__title-intro {
     font-size: 20pt;
@@ -569,6 +590,12 @@ h1,
     position: relative;
     top: 80px;
     right: 250px;
+  }
+}
+
+@media (max-width:591px) {
+  .textp {
+    display: none;
   }
 }
 
@@ -602,32 +629,7 @@ h1,
   }
 }
 
-@media (max-width:900px) {
-  .main__intro {
-    display: grid;
-    grid-template-columns: repeat(2, 60%);
-    grid-gap: 5%;
-    padding-right: 0px;
-  }
 
-  .main__ihfo {
-    display: flex;
-    max-width: 25vw;
-    flex-direction: column;
-  }
-
-  .main__info-text {
-
-    width: 30vw;
-  }
-
-}
-
-@media (max-width:591px) {
-  .textp {
-    display: none;
-  }
-}
 
 /*=================================== page1_main_room_cards===================================*/
 .container-tit {
