@@ -13,19 +13,27 @@
 <body>
     <header class="header" style="background: url(./assets/images/Видозером1srt.png);">
         <nav class="header__nav">
-            <ul class="header__navbar menu">
-                <li class="header__navbar-li"><a class="header__links" href="#">Номера и цены</a></li>
-                <li class="header__navbar-li"><a class="header__links" href="#">Услуги</a>
-                    <ul class="header__navbar-drop">
-                        <li class="header__drop"><a class="header__links" href="#">Сибирский чан</a></li>
-                        <li class="header__drop"><a class="header__links" href="#">Мангал на природе</a></li>
-                        <li class="header__drop"><a class="header__links" href="#">Прокат велосипедов</a></li>
-                        <li class="header__drop"><a class="header__links" href="#">Ресторан "Фрегат"</a></li>
-                    </ul>
-                </li>
-                <li class="header__navbar-li"><a class="header__links" href="#">О базе отдыха</a></li>
-                <li class="header__navbar-li"><a class="header__links" href="#">Отзывы</a></li>
-                <li class="header__navbar-li"><a class="header__links" href="#">Контакты</a></li>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="header__navbar menu">
+                    <li class="header__navbar-li"><a class="header__links header__links-links" href="#">Номера и
+                            цены</a>
+                    </li>
+                    <li class="header__navbar-li"><a class="header__links" href="#">Услуги</a>
+                        <ul class="header__navbar-drop">
+                            <li class="header__drop"><a class="header__links" href="#">Сибирский чан</a></li>
+                            <li class="header__drop"><a class="header__links" href="#">Мангал на природе</a></li>
+                            <li class="header__drop"><a class="header__links" href="#">Прокат велосипедов</a></li>
+                            <li class="header__drop"><a class="header__links" href="#">Ресторан "Фрегат"</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar-li"><a class="header__links" href="#">О базе отдыха</a></li>
+                    <li class="header__navbar-li"><a class="header__links" href="#">Отзывы</a></li>
+                    <li class="header__navbar-li"><a class="header__links" href="#">Контакты</a></li>
+            </div>
             </ul>
             <div class="header__logo">
                 <img src="./assets/images/logo1str.png" alt="logo">
@@ -200,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="roomcard-mini">
+                    <div class="roomcard-mini card__roomcard-mini">
                         <div class="roomcard__pic roomcard__pic-mini">
                             <img src="./assets/images/nomer32.png" alt="room">
                         </div>
@@ -283,80 +291,82 @@
                 </section>
 
                 <div class="register-blok">
-                                    <div class="register-blok__context">
-                                        <div class="register-blok__columns">
-                                            <div class="register-blok__column1">
-                                                <div class="register-box">
-                                                    <div class="register-box__data">
-                                                        <label class="register-box__title" for="arrival_date">Дата заезда</label>
-                                                        <input class="register-box__style" type="date" id="arrival_date"
-                                                            name="trip-start">
-                                                    </div>
-                                                    <div class="register-box__data-2">
-                                                        <label class="register-box__title" for="departure_date">Дата oтъезда</label>
-                                                        <input class="register-box__style" type="date" id="departure_date"
-                                                            name="trip-start">
-                                                    </div>
-                                                </div>
-                                                <div class="register-box2">
-                                                    <div class="register-box2__direction">
-                                                        <label class="register-box2__title" for="type of housing">Вид жилья</label><br>
-                                                        <select class="register-box2__style" name="Type of housing">
-                                                            <option value="Option1">Гостиничный корпус</option>
-                                                            <option value="Option2">Коттедж (отдельный дом)</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="register-box2">
-                                                    <div class="register-box2__direction">
-                                                        <label class="register-box2__title" for="Room type">Вид номера</label><br>
-                                                        <select class="register-box2__style" name="Вид номера">
-                                                            <option value="Option1"> Номер 1-Категории “Стандарт”</option>
-                                                            <option value="Option2"> Номер 1-Категории “Стандарт”</option>
-                                                            <option value="Option3"> Номер 1-Категории “Стандарт”</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="register-box2">
-                                                    <form class="register-box2__direction">
-                                                        <label class="register-box2__title" for="fname"> Колличество человек</label><br>
-                                                        <input class="register-box2__style" type="text" id="name"
-                                                            placeholder="Введите количество отдыхающих"><br>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="register-blok__column2">
-                                                <div class="register-box3">
-                                                    <form class="register-box3__direction">
-                                                        <label class="register-box3__title" for="name"> Имя </label><br>
-                                                        <input class="register-box3__style" type="text" id="name"
-                                                            placeholder="Введите ваше имя"><br>
-                                                    </form>
-                                                </div>
-                                                <div class="register-box3">
-                                                    <form class="register-box3__direction">
-                                                        <label class="register-box3__title" for="fname"> Телефон</label><br>
-                                                        <input class="register-box3__style" type="text" id="name"placeholder="Введите ваш телефон"><br>
-                                                    </form>
-                                                </div>
-                                                <div class="register-box4">
-                                                    <form class="register-box4__direction">
-                                                        <label class="register-box4__title" for="fname"> Комментарий</label><br>
-                                                        <input class="register-box4__style" type="text" id="name"
-                                                            placeholder="Введите ваш комментарий"><br>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="register-button">
-                                            <input class="register-button__book" type="button" value="Забронировать номер">
-                                        </div>
+                    <div class="register-blok__context">
+                        <div class="register-blok__columns">
+                            <div class="register-blok__column1">
+                                <div class="register-box">
+                                    <div class="register-box__data">
+                                        <label class="register-box__title" for="arrival_date">Дата заезда</label>
+                                        <input class="register-box__style" type="date" id="arrival_date"
+                                            name="trip-start">
                                     </div>
-                                    <div class="register-img">
-                                        <img src="./assets/images/roomcard.png" alt="register-img">
+                                    <div class="register-box__data-2">
+                                        <label class="register-box__title" for="departure_date">Дата oтъезда</label>
+                                        <input class="register-box__style" type="date" id="departure_date"
+                                            name="trip-start">
                                     </div>
                                 </div>
-
+                                <div class="register-box2">
+                                    <div class="register-box2__direction">
+                                        <label class="register-box2__title" for="type of housing">Вид жилья</label><br>
+                                        <select class="register-box2__style" name="Type of housing">
+                                            <option value="Option1">Гостиничный корпус</option>
+                                            <option value="Option2">Коттедж (отдельный дом)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="register-box2">
+                                    <div class="register-box2__direction">
+                                        <label class="register-box2__title" for="Room type">Вид номера</label><br>
+                                        <select class="register-box2__style" name="Вид номера">
+                                            <option value="Option1"> Номер 1-Категории “Стандарт”</option>
+                                            <option value="Option2"> Номер 1-Категории “Стандарт”</option>
+                                            <option value="Option3"> Номер 1-Категории “Стандарт”</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="register-box2">
+                                    <form class="register-box2__direction">
+                                        <label class="register-box2__title" for="fname"> Колличество человек</label><br>
+                                        <input class="register-box2__style" type="text" id="name"
+                                            placeholder="Введите количество отдыхающих"><br>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="register-blok__column2">
+                                <div class="register-box3">
+                                    <form class="register-box3__direction">
+                                        <label class="register-box3__title" for="name"> Имя </label><br>
+                                        <input class="register-box3__style" type="text" id="name"
+                                            placeholder="Введите ваше имя"><br>
+                                    </form>
+                                </div>
+                                <div class="register-box3">
+                                    <form class="register-box3__direction">
+                                        <label class="register-box3__title" for="fname"> Телефон</label><br>
+                                        <input class="register-box3__style" type="text" id="name"
+                                            placeholder="Введите ваш телефон"><br>
+                                    </form>
+                                </div>
+                                <div class="register-box4">
+                                    <form class="register-box4__direction">
+                                        <label class="register-box4__title" for="fname"> Комментарий</label><br>
+                                        <input class="register-box4__style" type="text" id="name"
+                                            placeholder="Введите ваш комментарий"><br>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="register-button">
+                            <input class="register-button__book" type="button" value="Забронировать номер">
+                        </div>
+                    </div>
+                    <div class="register-img">
+                        <img src="./assets/images/roomcard.png" alt="register-img">
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="main__section section">
             <div class="main__cards-entertaiment" id="service">
                 <h2 class="main__cards-txt">Услуги и развлечения</h2>
@@ -366,7 +376,8 @@
                         <div class="main__cards-info">
                             <h3 class="main__cards-texth">Сибирский чан</h3>
                             <div class="main__cadr-title">
-                                <p class="main__cards-textp">Новинка в мире парения! Эта процедура<br>замешана на
+                                <p class="main__cards-textp">Новинка в мире парения! Эта процедура<br>замешана
+                                    на
                                     чудодейственной силе огня и<br>чистейшей байкальской воды в сочетании<br>с
                                     сибирскими
                                     травами и эфирными ....</p>
@@ -382,7 +393,8 @@
                             <div class="main__cadr-title">
                                 <p class="main__cards-textp">Приготовьте шашлык и насладитесь<br>вкусной едой на
                                     открытом
-                                    воздухе. На<br> территории нашей базы расположена<br>отличная беседка с большим
+                                    воздухе. На<br> территории нашей базы расположена<br>отличная беседка с
+                                    большим
                                     столом
                                     ...</p>
                                 <p class="main__cards-cena">от 1000 рублей в час</p>
@@ -395,7 +407,8 @@
                         <div class="main__cards-info">
                             <h3 class="main__cards-texth">Прокат велосипедов</h3>
                             <div class="main__cadr-title">
-                                <p class="main__cards-textp">Для семейного отдыха и приятного<br>времяпрепровождения мы
+                                <p class="main__cards-textp">Для семейного отдыха и
+                                    приятного<br>времяпрепровождения мы
                                     предоставляем<br>прокат качественных прогулочных велосипедов ...</p>
                                 <p class="main__cards-cena">от 500 рублей в час</p>
                             </div>
@@ -408,7 +421,8 @@
                             <h3 class="main__cards-texth">Сауна</h3>
                             <div class="main__cadr-title">
                                 <p class="main__cards-textp">В любое время года и при любой погоде,<br>
-                                    что может быть лучше настоящей сауны?<br> Наша сауна — настоящая находка для<br>
+                                    что может быть лучше настоящей сауны?<br> Наша сауна — настоящая находка
+                                    для<br>
                                     ценителей и
                                     любителей парной.</p>
                                 <p class="main__cards-cena">от 4000 рублей в час</p>
@@ -421,8 +435,10 @@
                         <div class="main__cards-info">
                             <h3 class="main__cards-texth">Рыбалка</h3>
                             <div class="main__cadr-title">
-                                <p class="main__cards-textp">Традиционное русское увеселительное<br>мероприятие, подарит
-                                    огромное<br> наслаждение и взрослым и детям!<br>Рыбалка в районе мыса Мухор ...</p>
+                                <p class="main__cards-textp">Традиционное русское увеселительное<br>мероприятие,
+                                    подарит
+                                    огромное<br> наслаждение и взрослым и детям!<br>Рыбалка в районе мыса Мухор
+                                    ...</p>
                                 <p class="main__cards-cena">от 2000 рублей в час</p>
                             </div>
                             <button class="main__cards-btn">ПОДРОБНЕЕ</button>
@@ -433,8 +449,10 @@
                         <div class="main__cards-info">
                             <h3 class="main__cards-texth">Конференц-зал</h3>
                             <div class="main__cadr-title">
-                                <p class="main__cards-textp">Если вы хотите совместить отдых и<br> плодотворную работу с
-                                    коллегами,<br> произвести положительное впечатление<br> на партнеров ....</p>
+                                <p class="main__cards-textp">Если вы хотите совместить отдых и<br> плодотворную
+                                    работу с
+                                    коллегами,<br> произвести положительное впечатление<br> на партнеров ....
+                                </p>
                                 <p class="main__cards-cena">от 1000 рублей в час</p>
                             </div>
                             <button class="main__cards-btn">ПОДРОБНЕЕ</button>
@@ -445,7 +463,8 @@
                         <div class="main__cards-info">
                             <h3 class="main__cards-texth">Ресторан “Фрегат”</h3>
                             <div class="main__cadr-title">
-                                <p class="main__cards-textp">У гостей есть возможность оценить<br> разнообразные блюда
+                                <p class="main__cards-textp">У гостей есть возможность оценить<br> разнообразные
+                                    блюда
                                     национальной<br> русской кухни и выпить свежесваренного<br>
                                     эспрессо или капучино.</p>
                                 <p class="main__cards-cena">от 5000 рублей в час</p>
@@ -458,7 +477,8 @@
                         <div class="main__cards-info">
                             <h3 class="main__cards-texth">Новый год 2022</h3>
                             <div class="main__cadr-title">
-                                <p class="main__cards-textp">Банкетное меню Новогодняя ночь 2022 г.<br> на одного
+                                <p class="main__cards-textp">Банкетное меню Новогодняя ночь 2022 г.<br> на
+                                    одного
                                     человека:
                                     Закуски<br>Мясная тарелка 75/25 гр. (Ростбиф,<br> балык (не жирная свинина),
                                     сервелат
@@ -514,8 +534,8 @@
                     <h3 class="main__title" id="review">Отзывы о базе отдыха “Фрегат”</h3>
                 </div>
                 <div class="container__reviews-cards">
-                    <div class="reviews__card"> <img class="reviews-quotes" src="./assets/images/otziv1str.png"
-                            alt="ковычки">
+                    <div class="reviews__card reviews__card1"> <img class="reviews-quotes"
+                            src="./assets/images/otziv1str.png" alt="ковычки">
                         <img class="reviews-inst" src="./assets/images/Vectorinst1srt.png" alt="instagram icon">
                         <div class="review">"Не в первый раз отдыхаем <br>на этой базе. Как всегда всё<br>
                             великолепно:
@@ -528,17 +548,19 @@
                     <div class="reviews__card"><img class="reviews-quotes" src="./assets/images/otziv1str.png"
                             alt="ковычки">
                         <img class="reviews-inst" src="./assets/images/Vectorinst1srt.png" alt="instagram icon">
-                        <div class="review">"Не в первый раз отдыхаем <br>на этой базе. Как всегда всё<br> великолепно:
+                        <div class="review">"Не в первый раз отдыхаем <br>на этой базе. Как всегда всё<br>
+                            великолепно:
                             радушный приём,<br>
                             отличное
                             питание,<br> уютное пребывание и <br>благоустроенный пляж. <br>Рекомендую всем для
                             <br>семейного
                             отдыха"</div>
                     </div>
-                    <div class="reviews__card"><img class="reviews-quotes" src="./assets/images/otziv1str.png"
-                            alt="ковычки">
+                    <div class="reviews__card reviews__card2"><img class="reviews-quotes"
+                            src="./assets/images/otziv1str.png" alt="ковычки">
                         <img class="reviews-inst" src="./assets/images/Vectorinst1srt.png" alt="instagram icon">
-                        <div class="review">"Не в первый раз отдыхаем <br>на этой базе. Как всегда всё<br> великолепно:
+                        <div class="review">"Не в первый раз отдыхаем <br>на этой базе. Как всегда всё<br>
+                            великолепно:
                             радушный приём,<br>
                             отличное
                             питание,<br> уютное пребывание и <br>благоустроенный пляж. <br>Рекомендую всем для
@@ -554,14 +576,14 @@
                             <div class="reviews__date">02.10.2021</div>
                         </div>
                     </div>
-                    <div class="reviews__author">
+                    <div class="reviews__author reviews__author1">
                         <img class="user" src="./assets/images/artem1str.png" alt="artem's icon">
                         <div class="reviews__txt">
                             <div class="reviews__name">Артём Сазонов</div>
                             <div class="reviews__date">02.10.2021</div>
                         </div>
                     </div>
-                    <div class="reviews__author">
+                    <div class="reviews__author reviews__author2">
                         <img class="user2" src="./assets/images/alex.png" alt="alexandr's photo">
                         <div class="reviews__txt">
                             <div class="reviews__name">Александр Ким</div>
@@ -590,7 +612,8 @@
             </div>
             <div class="main__location-box">
                 <diV class="main__location-maps">
-                    <img class="main__location-foto foto" src="./assets/images/cxema1srt.png" alt="karta"> </diV>
+                    <img class="main__location-foto foto" src="./assets/images/cxema1srt.png" alt="karta">
+                </diV>
                 <diV class="main__location-info">
                     <h3 class="main__location-textt">Наши конакты</h3>
                     <div class="main__location-telefon">
