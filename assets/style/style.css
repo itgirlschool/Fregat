@@ -686,58 +686,7 @@ ol {
 
 /*=====================================gallery==========================================================*/
 
-@media (max-width: 600px) {
-  .main-gallery {
-    max-width: 80%;
-    justify-content: center;
-  }
 
-  .gallery-block,
-  .gallery-block2 {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding: 5%;
-    flex-direction: column;
-    margin: 0px 20px 0px 20px;
-  }
-
-  .gallery-block__photo1,
-  .gallery-block__photo2,
-  .gallery-block__photo3,
-  .gallery-block2__photo1,
-  .gallery-block2__photo2,
-  .gallery-block2__photo3 {
-    max-width: 100%;
-    min-width: 100%;
-    align-content: stretch;
-    justify-items: center;
-    align-items: baseline;
-  }
-
-  .gallery-block__photo1 img,
-  .gallery-block__photo2 img,
-  .gallery-block__photo3 img,
-  .gallery-block2__photo1 img,
-  .gallery-block2__photo2 img,
-  .gallery-block2__photo3 img {
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 100%;
-  }
-
-  .gallery-button {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .gallery-button__watch {
-    font-size: 10px;
-  }
-}
 
 .main__gallery {
   max-width: 1200px;
@@ -1141,7 +1090,7 @@ a:-webkit-any(link) {
 }
 
 /*====================================media=======================================================*/
-/*--------*/
+/*---page1_header-----*/
 @media (max-width: 1340px) {
 
   .pfonepic,
@@ -1338,7 +1287,7 @@ a:-webkit-any(link) {
   }
 }
 
-/*-------------------*/
+/*----------header-title---------*/
 @media (max-width: 1280px) {
   .header__title {
     display: flex;
@@ -1413,7 +1362,7 @@ a:-webkit-any(link) {
   }
 }
 
-/*-------------------*/
+/*--------page1_main-info-----------*/
 
 @media (max-width: 1200px) {
   .main__title-intro {
@@ -1500,7 +1449,7 @@ a:-webkit-any(link) {
   }
 }
 
-/*-------------------*/
+/*----------page1_main_room_cards---------*/
 @media (min-width: 950px) and (max-width: 1280px) {
   .container__roomcards {
     width: 100vw;
@@ -1562,7 +1511,7 @@ a:-webkit-any(link) {
   }
 }
 
-/*-------------------*/
+/*----------register form---------*/
 @media (max-width: 768px) {
   .main__register-form {
     width: 80vw;
@@ -1687,7 +1636,7 @@ a:-webkit-any(link) {
   }
 }
 
-/*-------------------*/
+/*---------cards-blok----------*/
 @media (max-width: 1395px) {
   .main__cards-cena {
     font-size: 11pt;
@@ -1760,8 +1709,63 @@ a:-webkit-any(link) {
   }
 }
 
-/*-------------------*/
-/*-------------------*/
+/*----------gallery---------*/
+@media (max-width: 600px) {
+  .main-gallery {
+    max-width: 80%;
+    justify-content: center;
+  }
+
+  .gallery-block,
+  .gallery-block2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 5%;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .gallery-block__photo1,
+  .gallery-block__photo2,
+  .gallery-block__photo3,
+  .gallery-block2__photo1,
+  .gallery-block2__photo2,
+  .gallery-block2__photo3 {
+    max-width: 100%;
+    min-width: 100%;
+    align-content: stretch;
+    justify-items: center;
+    align-items: baseline;
+  }
+
+  .gallery-block__photo1 img,
+  .gallery-block__photo2 img,
+  .gallery-block__photo3 img,
+  .gallery-block2__photo1 img,
+  .gallery-block2__photo2 img,
+  .gallery-block2__photo3 img {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+  }
+
+  .gallery-button {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .gallery-button__watch {
+    font-size: 10px;
+  }
+}
+
+
+
+/*--------reviews-----------*/
 @media (max-width: 1200px) {
 
   .reviews__card1,
@@ -1786,7 +1790,7 @@ a:-webkit-any(link) {
   }
 }
 
-/*-------------------*/
+/*---------location----------*/
 @media (max-width: 1093px) {
   .main__location-box {
     display: flex;
@@ -1800,4 +1804,4 @@ a:-webkit-any(link) {
   }
 }
 
-/*-------------------*/
+/*--------footer-----------*/
