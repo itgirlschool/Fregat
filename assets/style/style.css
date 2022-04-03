@@ -1649,7 +1649,7 @@ a:-webkit-any(link) {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    flex-direction: column;
+
   }
 
   .main__cards-textp {
