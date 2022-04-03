@@ -346,6 +346,10 @@ a:-webkit-any(link) {
 }
 
 @media (min-width: 1100px) and (max-width: 1440px) {
+  .room {
+    width: 95vw;
+    gap: 2vw;
+  }
   .container__roomcards {
     width: 100vw;
     display: flex;
@@ -364,7 +368,8 @@ a:-webkit-any(link) {
   .main__title {
     font-size: 40pt;
   }
-  .phone1 {
+  .phone1,
+  .room__pic-mini1 {
     display: none;
   }
   .menu__item-header {
@@ -372,6 +377,17 @@ a:-webkit-any(link) {
   }
 }
 @media (min-width: 769px) and (max-width: 1099px) {
+  .room {
+    width: 95vw;
+    gap: 2vw;
+  }
+  .items__li {
+    margin: 1px;
+    font-size: small;
+  }
+  .room__list {
+    padding: 5px 10px 0 0;
+  }
   .container__roomcards {
     width: 100vw;
     display: flex;
@@ -513,6 +529,10 @@ a:-webkit-any(link) {
   .menu__link-header {
     transition-duration: 0s;
   }
+  .room__pic-mini {
+    min-width: 45%;
+    margin: 3px;
+  }
 }
 @media (max-width: 768px) {
   .phone1,
@@ -524,8 +544,36 @@ a:-webkit-any(link) {
   .menu__list-footer,
   .menu__item-footer,
   .menu__link-footer,
-  .footer ul {
+  .footer ul,
+  .room__pic-mini {
     display: none;
+  }
+  .room {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .room__marker {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+  }
+  .room__pic-main {
+    min-width: 80vw;
+    width: 80vw;
+  }
+
+  .items {
+    list-style: square url(/assets/images/checkmark.png) inside;
+    color: #545454;
+  }
+  .items__li {
+    margin: 0;
+    font-size: smaller;
+  }
+  .room__list {
+    padding: 5px 10px 0 0;
   }
 
   .main__description {
