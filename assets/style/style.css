@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=Montserrat:wght@700&family=Oswald:wght@500&family=Raleway:ital,wght@0,300;0,500;1,100;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
 
+
 /*
 font-family: 'Cormorant Unicase', serif;
 font-family: 'Montserrat', sans-serif;
@@ -545,19 +546,17 @@ ol {
   padding: 13px 14px 90px 14px;
 }
 
-.register-box__style {
-  padding: 13px 14px;
-}
-
-.register-box2__style,
+.register-box__style,
 .register-box3__style {
   padding: 13px 14px;
+}
+.register-box2__style{
+  padding: 13px 0px;
 }
 
 .register-box__style {
   width: 131px;
 }
-
 .register-box2__style,
 .register-box3__style,
 .register-box4__style {
