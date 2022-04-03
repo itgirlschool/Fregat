@@ -713,7 +713,7 @@ h1,
 
 
 /*==================================register==============================*/
-.main__register {
+.register-blok {
   background-color: ivory;
 }
 
@@ -1341,7 +1341,7 @@ width: 350px;
 
 .reviews__card {
   background-color: #fcfdff;
-  padding: 2rem;
+  padding:2rem;
 }
 
 .reviews-quotes {
@@ -1349,7 +1349,7 @@ width: 350px;
   bottom: 54px;
 }
 
-.reviews-inst {
+.reviews-inst{
   position: relative;
   left: 140px;
   bottom: 34px;
@@ -1369,6 +1369,7 @@ width: 350px;
   display: flex;
   align-items: center;
   padding-bottom: 5rem;
+ 
 }
 
 .reviews__txt {
@@ -1383,6 +1384,19 @@ width: 350px;
 .reviews__date,
 .review {
   color: #515151;
+}
+@media (max-width:900px){
+  .container__reviews, .container__reviews-cards, .main__reviews {
+    display: flex;
+    direction:column;
+    flex-wrap:wrap;
+    justify-content: center}
+  .reviews-quotes {
+      bottom: 20px;
+  }
+}
+@media (min-width:901px) and (max-width:1280){
+  
 }
 
 
