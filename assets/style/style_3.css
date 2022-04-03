@@ -528,9 +528,48 @@ a:-webkit-any(link) {
     display: none;
   }
 
+  .main__description {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 98.5vw;
+  }
+  .description__buttons {
+    margin-bottom: 30px;
+    border: none;
+
+    margin-top: 20px;
+  }
+  .description__button {
+    border: 1px solid rgb(194, 193, 193);
+    background-color: inherit;
+    max-width: 200px;
+    color: #545454;
+    font-family: "Raleway", sans-serif;
+    padding: 5px 10px;
+    margin-right: 5px;
+    justify-self: center;
+  }
+  .description__button-button1 {
+    margin: 0;
+  }
+  .description__button:focus,
+  .description__button:hover {
+    background-color: #4c65ad;
+    color: #ffff;
+  }
+
+  .description__button-content {
+    width: 80vw;
+    margin-top: 10px;
+    color: #515151;
+    font-family: "Raleway", sans-serif;
+  }
+
   .container__roomcards {
     width: 100vw;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -545,12 +584,6 @@ a:-webkit-any(link) {
 
   .main__title {
     font-size: 25pt;
-  }
-
-  .description__button-button1,
-  .description__button-button2 {
-    width: 90vw;
-    margin: 0 20px 20px 20px;
   }
 
   .footer {
