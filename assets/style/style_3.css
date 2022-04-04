@@ -210,15 +210,17 @@ a:-webkit-any(link) {
   display: grid;
   margin-top: 50px;
   justify-items: center;
-  width: 98.5vw;
+  width: 96.5vw;
+  max-width: 96.5vw;
 }
 .description__buttons {
   box-sizing: border-box;
-  width: 100%;
+  width: 98%;
   border-top: 1px solid rgb(194, 193, 193);
   border-bottom: 1px solid rgb(194, 193, 193);
   margin-bottom: 30px;
   margin-top: 20px;
+  max-width: 98.5vw;
 }
 .description__button {
   background-color: inherit;
@@ -565,6 +567,11 @@ a:-webkit-any(link) {
   .footer ul,
   .room__pic-mini {
     display: none;
+  }
+  .breadcrumbs {
+    display: flex;
+    margin: 30px 0px 50px 50px;
+    width: 95vw;
   }
   .room {
     width: 80vw;
