@@ -1042,51 +1042,23 @@ a:-webkit-any(link) {
     flex-direction: column;
   }
 
-  .question-catalog__style[type="radio"] {
-    display: none;
-  }
-
-  .question-catalog__point1,
-  .question-catalog__point1-1,
-  .question-catalog__point2,
-  .question-catalog__point2-2,
-  .question-catalog__point3,
-  .question-catalog__point3-3,
-  .question-catalog__point4 {
+  .question-catalog__point {
     font-size: 13px;
   }
 
-  .question-catalog__point1 {
-    padding: 11px 35px 11px 0px;
-  }
-
-  .question-catalog__point2 {
-    padding: 11px 30px 11px 0px;
-  }
-
-  .question-catalog__point3 {
-    padding: 11px 10px 11px 0px;
-  }
-
-  .question-catalog__point1-1 {
-    padding: 11px 0px 11px 10px;
-  }
-
-  .question-catalog__point2-2 {
+  .question-catalog__point {
     padding: 11px 0px;
   }
 
-  .question-catalog__point3-3 {
-    padding: 11px 20px 11px 0px;
-  }
-
-  .question-catalog__point4 {
-    padding: 11px 20px 11px 0px;
-  }
-
-  .question-catalog__style[type="radio"]:checked + label {
-    border: 1px solid rgba(76, 101, 173, 1);
-    padding: 11px 0px 11px 0px;
+  .question-catalog__style1:checked + label,
+  .question-catalog__style1-1:checked + label,
+  .question-catalog__style2:checked + label,
+  .question-catalog__style2-2:checked + label,
+  .question-catalog__style3:checked + label,
+  .question-catalog__style3-3:checked + label,
+  .question-catalog__style4:checked + label {
+    padding: 11px 0px;
+    width: 300px;
   }
 
   .main__card-text {
@@ -1137,13 +1109,7 @@ a:-webkit-any(link) {
     font-size: 15px;
   }
 
-  .question-catalog__point1,
-  .question-catalog__point1-1,
-  .question-catalog__point2,
-  .question-catalog__point2-2,
-  .question-catalog__point3,
-  .question-catalog__point3-3,
-  .question-catalog__point4 {
+  .question-catalog__point {
     font-size: 13px;
   }
 
@@ -1297,6 +1263,17 @@ a:-webkit-any(link) {
   .type-room__pic {
     width: 250px;
   }
+
+  .question-catalog__style1:checked + label,
+  .question-catalog__style1-1:checked + label,
+  .question-catalog__style2:checked + label,
+  .question-catalog__style2-2:checked + label,
+  .question-catalog__style3:checked + label,
+  .question-catalog__style3-3:checked + label,
+  .question-catalog__style4:checked + label {
+    padding: 11px 0px;
+    width: 200px;
+  }
 }
 
 @media (max-width: 318px) {
@@ -1327,46 +1304,8 @@ a:-webkit-any(link) {
     font-size: 12px;
   }
 
-  .question-catalog__point1,
-  .question-catalog__point1-1,
-  .question-catalog__point2,
-  .question-catalog__point2-2,
-  .question-catalog__point3,
-  .question-catalog__point3-3,
-  .question-catalog__point4 {
+  .question-catalog__point {
     font-size: 10px;
-  }
-
-  .question-catalog__point1 {
-    padding: 5px 35px 5px 0px;
-  }
-
-  .question-catalog__point2 {
-    padding: 5px 30px 5px 0px;
-  }
-
-  .question-catalog__point3 {
-    padding: 5px 10px 5px 0px;
-  }
-
-  .question-catalog__point1-1 {
-    padding: 5px 0px 5px 10px;
-  }
-
-  .question-catalog__point2-2 {
-    padding: 5px 0px;
-  }
-
-  .question-catalog__point3-3 {
-    padding: 5px 20px 5px 0px;
-  }
-
-  .question-catalog__point4 {
-    padding: 5px 20px 5px 0px;
-  }
-
-  .question-catalog__style[type="radio"]:checked + label {
-    padding: 5px 0px 5px 0px;
   }
 
   .filter-rooms {
