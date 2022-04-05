@@ -1533,7 +1533,7 @@ a:-webkit-any(link) {
 /*----------register form---------*/
 
 @media (min-width: 769px) and (max-width: 1468px) {
-  .register-blok__context {
+  .register-blok__context{
     max-width: 1300px;
     margin: 0 auto;
   }
@@ -1541,7 +1541,11 @@ a:-webkit-any(link) {
   .register-img {
     display: none;
   }
-}
+  .header-register {
+    padding-left: 179px;
+  }
+  }
+
 
 @media (max-width: 1024px) {
   .register-blok__title {
